@@ -123,6 +123,53 @@ async function loadCompanyDetail(id) {
             `).join("");
         }
 
+        // Load Drive Placement Materials
+        const materialsListEl = document.getElementById("company-drive-materials-list");
+        const hubLinkEl = document.getElementById("company-materials-hub-link");
+        if (materialsListEl) {
+            try {
+                // Try searching by company name
+                const shortName = c.name.split(" ")[0].replace(/[^a-zA-Z]/g, '');
+                if (hubLinkEl) {
+                    hubLinkEl.href = `/pages/materials.html?company=${encodeURIComponent(shortName)}`;
+                }
+                const mats = await window.api.getCompanyMaterials(shortName);
+                if (mats && mats.length > 0) {
+                    materialsListEl.innerHTML = mats.slice(0, 6).map(m => `
+                        <div style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                                    <span style="font-size: 0.72rem; font-weight: 700; color: #818cf8; text-transform: uppercase;">${m.format}</span>
+                                    <span style="font-size: 0.7rem; color: var(--text-muted);">${m.category}</span>
+                                </div>
+                                <h5 style="font-size: 0.92rem; color: #f8fafc; margin-bottom: 6px; line-height: 1.3;">${m.title}</h5>
+                            </div>
+                            <div style="display: flex; gap: 8px; margin-top: 12px;">
+                                <a href="${m.view_url}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="flex: 1; text-align: center; font-size: 0.78rem; padding: 5px 8px;">
+                                    View in Drive ↗
+                                </a>
+                                <a href="${m.download_url}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="padding: 5px 10px; font-size: 0.78rem;" title="Download File">
+                                    ⬇️
+                                </a>
+                            </div>
+                        </div>
+                    `).join("");
+                } else {
+                    materialsListEl.innerHTML = `
+                        <div style="grid-column: 1/-1; padding: 12px; background: rgba(255,255,255,0.03); border-radius: 8px;">
+                            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">
+                                Comprehensive test materials and mock exams for <b>${c.name}</b> are ready in our central repository.
+                                <a href="/pages/materials.html" style="color: #818cf8; font-weight: 600; margin-left: 6px;">Browse All Placement Materials ➔</a>
+                            </p>
+                        </div>
+                    `;
+                }
+            } catch (mErr) {
+                console.warn("Could not load company materials:", mErr);
+                materialsListEl.innerHTML = `<p style="color: var(--text-muted); font-size: 0.85rem;">Check <a href="/pages/materials.html" style="color:#818cf8;">Materials Hub</a> for all drive resources.</p>`;
+            }
+        }
+
     } catch (err) {
         showToast("error", "Unable to load company details.");
     }

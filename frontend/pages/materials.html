@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Materials Repository — AI Placement Coach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/materials.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/pages/dashboard.html" class="brand-logo">
+                <div class="brand-icon">🎓</div>
+                <span>AI Placement Coach</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/pages/dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="/pages/materials.html" class="nav-link active">Materials Hub</a></li>
+                <li><a href="/pages/companies.html" class="nav-link">Companies</a></li>
+                <li><a href="/pages/aptitude.html" class="nav-link">Aptitude</a></li>
+                <li><a href="/pages/gd.html" class="nav-link">GD Simulator</a></li>
+                <li><a href="/pages/interview.html" class="nav-link">AI Interview</a></li>
+                <li><a href="/pages/simulation.html" class="nav-link">Simulation</a></li>
+                <li><a href="/pages/progress.html" class="nav-link">Analytics</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/pages/profile.html" class="user-menu-btn">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name-display">Student</span>
+                </a>
+                <button class="btn btn-outline btn-sm logout-btn">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/pages/dashboard.html" class="sidebar-link"><span>📊</span> Dashboard</a></li>
+                <li><a href="/pages/materials.html" class="sidebar-link active"><span>📚</span> Placement Materials</a></li>
+                <li><a href="/pages/companies.html" class="sidebar-link"><span>🏢</span> Company Tracks</a></li>
+                <li><a href="/pages/aptitude.html" class="sidebar-link"><span>🧮</span> Aptitude Test</a></li>
+                <li><a href="/pages/gd.html" class="sidebar-link"><span>👥</span> Group Discussion</a></li>
+                <li><a href="/pages/interview.html" class="sidebar-link"><span>🎙️</span> AI Mock Interview</a></li>
+                <li><a href="/pages/resume.html" class="sidebar-link"><span>📄</span> Resume AI</a></li>
+                <li><a href="/pages/simulation.html" class="sidebar-link"><span>🚀</span> Placement Drive</a></li>
+                <li><a href="/pages/progress.html" class="sidebar-link"><span>📈</span> Analytics</a></li>
+                <li><a href="/pages/profile.html" class="sidebar-link"><span>⚙️</span> Profile Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Card with Drive Link -->
+            <section class="materials-hero">
+                <div class="materials-hero-content">
+                    <div class="materials-hero-text">
+                        <div class="materials-drive-badge">
+                            <i data-lucide="cloud" style="width:16px;height:16px;"></i> Google Drive Placement Repository Connected
+                        </div>
+                        <h1>Placement Study Materials</h1>
+                        <p>Access 570+ verified previous year placement papers, company test sets, handwritten C &amp; DSA notes, quantitative shortcuts, and technical interview questions extracted directly from the comprehensive placement drive archive.</p>
+                    </div>
+                    <div class="materials-hero-actions">
+                        <a href="https://drive.google.com/drive/folders/1NC5wLHUMUye5_5zHzSgTgXDUdVmh43ZU" id="openDriveFolderBtn" target="_blank" rel="noopener noreferrer" class="btn-drive-primary">
+                            <i data-lucide="folder-symlink" style="width:20px;height:20px;"></i>
+                            Open Full Drive Folder
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Stats -->
+            <section class="materials-stats-grid">
+                <div class="stat-pill-card">
+                    <div class="stat-pill-icon">📑</div>
+                    <div class="stat-pill-info">
+                        <div class="val" id="statTotalMaterials">578</div>
+                        <div class="lbl">Total Study Documents</div>
+                    </div>
+                </div>
+                <div class="stat-pill-card">
+                    <div class="stat-pill-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">🏢</div>
+                    <div class="stat-pill-info">
+                        <div class="val" id="statCompaniesCount">16</div>
+                        <div class="lbl">Companies &amp; Platforms</div>
+                    </div>
+                </div>
+                <div class="stat-pill-card">
+                    <div class="stat-pill-icon" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">⚡</div>
+                    <div class="stat-pill-info">
+                        <div class="val">AMCAT / CoCubes</div>
+                        <div class="lbl">Standard Assessment Papers</div>
+                    </div>
+                </div>
+                <div class="stat-pill-card">
+                    <div class="stat-pill-icon" style="background: rgba(236, 72, 153, 0.15); color: #f472b6;">📝</div>
+                    <div class="stat-pill-info">
+                        <div class="val">DSA &amp; Notes</div>
+                        <div class="lbl">Handwritten &amp; Solved</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Filter Controls -->
+            <section class="materials-filter-box">
+                <div class="filter-row-top">
+                    <div class="search-input-wrap">
+                        <i data-lucide="search" class="search-icon" style="width:18px;height:18px;"></i>
+                        <input type="text" id="materialSearchInput" placeholder="Search 570+ papers, quant formulas, DSA notes, company questions...">
+                    </div>
+                    <div class="filter-selects">
+                        <select id="companySelect">
+                            <option value="all">🏢 All Companies &amp; Platforms</option>
+                        </select>
+                        <select id="formatSelect">
+                            <option value="all">📄 All Formats</option>
+                            <option value="pdf">📕 PDF Documents</option>
+                            <option value="docx">📘 Word Documents</option>
+                            <option value="zip">📦 ZIP Archives</option>
+                            <option value="code">💻 Code / Text</option>
+                            <option value="folder">📁 Bundles / Folders</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Category Chips -->
+                <div class="category-chips-bar">
+                    <button class="category-chip active" data-category="all">🌟 All Categories</button>
+                    <button class="category-chip" data-category="Company Placement Papers">🏢 Company Papers</button>
+                    <button class="category-chip" data-category="Aptitude &amp; Reasoning">🧮 Aptitude &amp; Reasoning</button>
+                    <button class="category-chip" data-category="Coding &amp; DSA">💻 Coding &amp; DSA</button>
+                    <button class="category-chip" data-category="Assessment Platforms">⚡ AMCAT / CoCubes / eLitmus</button>
+                    <button class="category-chip" data-category="Verbal &amp; Communication">🗣️ Verbal &amp; JAM</button>
+                </div>
+            </section>
+
+            <!-- Header Info -->
+            <div class="results-header-bar">
+                <span id="resultsTotalCount">Loading materials...</span>
+                <span>💡 Click <b>View on Drive</b> to preview or read online.</span>
+            </div>
+
+            <!-- Material Grid Container -->
+            <div class="materials-grid" id="materialsGrid">
+                <!-- Injected via materials.js -->
+            </div>
+
+            <!-- Pagination Bar -->
+            <div class="pagination-wrap">
+                <button class="btn-page" id="prevPageBtn" disabled>&larr; Previous</button>
+                <span class="page-info" id="pageIndicator">Page 1 of 1</span>
+                <button class="btn-page" id="nextPageBtn">Next &rarr;</button>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/materials.js"></script>
+</body>
+</html>

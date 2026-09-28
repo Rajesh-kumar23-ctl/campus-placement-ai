@@ -17,6 +17,7 @@ from backend.routes.resume import router as resume_router
 from backend.routes.companies import router as companies_router
 from backend.routes.progress import router as progress_router
 from backend.routes.simulation import router as simulation_router
+from backend.routes.materials import router as materials_router
 
 # Configure Logging
 logging.basicConfig(
@@ -66,6 +67,7 @@ app.include_router(resume_router)
 app.include_router(companies_router)
 app.include_router(progress_router)
 app.include_router(simulation_router)
+app.include_router(materials_router)
 
 @app.get("/api/health", tags=["Health"])
 def health_check():

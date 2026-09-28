@@ -396,3 +396,83 @@ class TestPlacementSimulation:
         res_get = client.get(f"/api/simulation/{simulation_id}", headers=get_auth_headers())
         assert res_get.status_code == 200
         assert res_get.json()["id"] == simulation_id
+
+
+class TestMaterials:
+    def test_list_materials_default(self):
+        response = client.get("/api/materials")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["total"] >= 500
+        assert len(data["materials"]) == 24
+        assert data["page"] == 1
+        assert "drive_root_url" in data
+        assert "1NC5wLHUMUye5_5zHzSgTgXDUdVmh43ZU" in data["drive_root_url"]
+        first = data["materials"][0]
+        assert "id" in first
+        assert "title" in first
+        assert "company" in first
+        assert "view_url" in first
+        assert "download_url" in first
+        assert "format" in first
+
+    def test_materials_company_filter(self):
+        response = client.get("/api/materials?company=INFOSYS&limit=10")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["total"] >= 100
+        for item in data["materials"]:
+            assert item["company"] == "INFOSYS"
+
+    def test_materials_search(self):
+        response = client.get("/api/materials?search=paper")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["total"] > 0
+        for item in data["materials"]:
+            matches = "paper" in item["title"].lower() or "paper" in item["description"].lower() or any("paper" in t.lower() for t in item["tags"]) or "paper" in item["filename"].lower()
+            assert matches
+
+    def test_material_companies_summary(self):
+        response = client.get("/api/materials/companies")
+        assert response.status_code == 200
+        companies = response.json()
+        assert len(companies) >= 15
+        company_names = [c["company"] for c in companies]
+        assert "INFOSYS" in company_names
+        assert "CAPGEMINI" in company_names
+        assert "ACCENTURE" in company_names
+        assert "General / Core CS" in company_names
+
+    def test_material_categories(self):
+        response = client.get("/api/materials/categories")
+        assert response.status_code == 200
+        data = response.json()
+        assert "categories" in data
+        assert len(data["categories"]) > 0
+
+    def test_drive_info(self):
+        response = client.get("/api/materials/drive-info")
+        assert response.status_code == 200
+        info = response.json()
+        assert info["total_materials"] >= 500
+        assert info["companies_count"] >= 15
+        assert "1NC5wLHUMUye5_5zHzSgTgXDUdVmh43ZU" in info["drive_root_url"]
+
+    def test_company_materials_endpoint(self):
+        response = client.get("/api/materials/company/INFOSYS")
+        assert response.status_code == 200
+        res = response.json()
+        assert isinstance(res, list)
+        assert len(res) > 0
+        assert res[0]["company"] == "INFOSYS"
+
+    def test_get_single_material(self):
+        list_res = client.get("/api/materials?limit=1")
+        assert list_res.status_code == 200
+        item_id = list_res.json()["materials"][0]["id"]
+        single_res = client.get(f"/api/materials/{item_id}")
+        assert single_res.status_code == 200
+        assert single_res.json()["id"] == item_id
+
+

@@ -268,6 +268,37 @@ class APIClient {
     async getSimulationReport(simulationId) {
         return this._request(`/api/simulation/${simulationId}`, { method: "GET" });
     }
+
+    // --- Placement Study Materials (Drive Integrated) ---
+    async getMaterials(params = {}) {
+        const queryParts = [];
+        if (params.search) queryParts.push(`search=${encodeURIComponent(params.search)}`);
+        if (params.company && params.company !== "all") queryParts.push(`company=${encodeURIComponent(params.company)}`);
+        if (params.category && params.category !== "all") queryParts.push(`category=${encodeURIComponent(params.category)}`);
+        if (params.format && params.format !== "all") queryParts.push(`format=${encodeURIComponent(params.format)}`);
+        if (params.featured_only) queryParts.push(`featured_only=true`);
+        if (params.page) queryParts.push(`page=${params.page}`);
+        if (params.limit) queryParts.push(`limit=${params.limit}`);
+
+        const queryString = queryParts.length ? `?${queryParts.join("&")}` : "";
+        return this._request(`/api/materials${queryString}`, { method: "GET" });
+    }
+
+    async getMaterialCompanies() {
+        return this._request("/api/materials/companies", { method: "GET" });
+    }
+
+    async getMaterialCategories() {
+        return this._request("/api/materials/categories", { method: "GET" });
+    }
+
+    async getCompanyMaterials(companyName) {
+        return this._request(`/api/materials/company/${encodeURIComponent(companyName)}`, { method: "GET" });
+    }
+
+    async getDriveInfo() {
+        return this._request("/api/materials/drive-info", { method: "GET" });
+    }
 }
 
 // Export single shared instance globally

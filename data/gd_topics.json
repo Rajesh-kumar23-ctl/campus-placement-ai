@@ -1,0 +1,680 @@
+[
+  {
+    "id": "gd-1",
+    "topic": "Will Artificial Intelligence replace human jobs or create new opportunities?",
+    "category": "Technology & Future of Work",
+    "difficulty": "Medium",
+    "overview": "Explores the dual impact of rapid advancements in AI, automation, and LLMs on global employment, skill obsolescence, and new technological career frontiers.",
+    "opening_statement": "Good morning everyone. The question of whether AI will replace human jobs or augment human capability is one of the defining economic debates of our decade. While routine and repetitive cognitive tasks face automation, history demonstrates that technological revolutions ultimately birth novel industries, higher-value roles, and unprecedented productivity.",
+    "key_arguments_for": [
+      "AI automates repetitive and administrative burdens, freeing humans for strategic, creative, and interpersonal tasks.",
+      "Emergence of brand-new sectors: Prompt Engineering, AI Ethics, Data Curation, Robotics maintenance.",
+      "Economic productivity gains create capital reinvestment into consumer services, healthcare, and education."
+    ],
+    "key_arguments_against": [
+      "The velocity of AI advancement is outpacing human retraining and educational curriculum adaptation.",
+      "Entry-level roles in software, copywriting, and customer support are diminishing, raising the barrier to entry for fresh graduates.",
+      "Wealth concentration may accelerate toward AI infrastructure owners, exacerbating income inequality."
+    ],
+    "real_world_examples": [
+      "The advent of the ATM in the 1970s did not eliminate bank tellers; instead, lower branch operating costs multiplied branch counts, transitioning tellers into relationship managers.",
+      "The rise of Generative AI tools (ChatGPT, GitHub Copilot) amplifying developer throughput rather than eliminating developers entirely."
+    ],
+    "thirty_sec_speech": "Friends, AI is a tool of empowerment, not extermination. It replaces tasks, not entire professions. The critical differentiator is agility: professionals who leverage AI will inevitably replace those who resist it. Our focus must be on lifelong upskilling and ethical governance.",
+    "one_min_speech": "Good morning members. Looking back at the Industrial Revolution or the rise of the personal computer, fear of mass structural unemployment always preceded massive economic expansion. Today, AI handles diagnostic pattern matching, automated test writing, and data synthesis. What it cannot replicate is emotional intelligence, authentic leadership, moral nuance, and creative intuition. Rather than fearing job extinction, we must accelerate institutional curriculum reforms, teach students how to architect and evaluate AI systems, and institute safety nets for displaced workforces. In summary, AI will not replace humans, but humans collaborating with AI will transform our workforce.",
+    "conclusion": "In conclusion, AI is fundamentally a catalyst for job transformation rather than mere destruction. The solution lies not in halting progress, but in proactively bridging skill gaps through targeted education and adaptive career paths.",
+    "things_to_avoid": [
+      "Making extreme, unnuanced claims like 'all software jobs will vanish in 2 years'",
+      "Interrupting participants aggressively without acknowledging their points",
+      "Treating AI as a magic wand without understanding technical limitations (hallucinations, bias, compute costs)"
+    ],
+    "follow_up_questions": [
+      "What concrete curriculum changes should universities make today to prepare students for an AI-native job market?",
+      "How should governments balance AI innovation speed with labor protection policies?"
+    ]
+  },
+  {
+    "id": "gd-2",
+    "topic": "Remote Work vs Return-to-Office: What is the optimal hybrid model for tech firms?",
+    "category": "Corporate Culture & Workplace",
+    "difficulty": "Easy",
+    "overview": "A discussion on workplace productivity, employee well-being, team collaboration, and spontaneous innovation in the post-pandemic corporate ecosystem.",
+    "opening_statement": "Hello peers. The post-pandemic shift toward remote and hybrid work has redefined organizational culture. While remote work democratizes access to talent and enhances work-life balance, in-person collaboration fosters spontaneous serendipity, mentorship for freshers, and cultural alignment.",
+    "key_arguments_for": [
+      "Hybrid models save commute time and emissions while maintaining employee satisfaction and retention.",
+      "Enables companies to recruit diverse talent from Tier-2 and Tier-3 cities without mandatory relocation.",
+      "Focuses evaluations on deliverables and output rather than mere physical desk presence."
+    ],
+    "key_arguments_against": [
+      "College graduates miss out on informal peer learning, observational mentorship, and networking.",
+      "Proximity bias can emerge where in-office employees receive faster promotions and plum projects.",
+      "Maintaining commercial real estate and dual infrastructure increases overhead costs."
+    ],
+    "real_world_examples": [
+      "TCS, Infosys, and Tech Mahindra implementing 3-day hybrid office mandates to foster team synergy and security compliance.",
+      "GitLab and Automattic operating successfully as 100% remote asynchronous organizations worldwide."
+    ],
+    "thirty_sec_speech": "A rigid 5-day office mandate alienates top talent, while full remote isolation hampers junior mentorship. The optimal sweet spot is a structured 3-2 hybrid model, combining dedicated collaboration days with focused individual deep-work days.",
+    "one_min_speech": "Colleagues, the debate should not be binary. Remote work excels at deep, uninterrupted execution, while physical co-location accelerates cross-functional brainstorming and onboarding for fresh graduates. When junior developers sit next to senior architects, spontaneous learning happens that no scheduled video call can reproduce. Therefore, the goal of modern enterprises should be intentional presence: gathering teams for sprint planning, design reviews, and hackathons, while granting flexibility for individual deliverables. Trust and metrics must replace surveillance.",
+    "conclusion": "To summarize, the future of work is neither 100% cubicles nor 100% isolated screens. An intentional, outcomes-driven hybrid model balances human mentorship with individual autonomy.",
+    "things_to_avoid": [
+      "Framing remote workers as inherently lazy or office managers as draconian",
+      "Ignoring data security and client privacy considerations in remote setups",
+      "Speaking without proposing actionable compromise models"
+    ],
+    "follow_up_questions": [
+      "How can companies objectively measure productivity without invasive employee surveillance software?",
+      "How do junior developers build informal professional networks in a primarily remote setting?"
+    ]
+  },
+  {
+    "id": "gd-3",
+    "topic": "Is Moonlighting ethical for software professionals?",
+    "category": "Ethics & Professionalism",
+    "difficulty": "Hard",
+    "overview": "Examines software engineers holding secondary jobs or side projects, balancing contractual employment terms, intellectual property, conflict of interest, and personal freedom.",
+    "opening_statement": "Welcome colleagues. The debate on moonlighting intersects legal obligations, ethical integrity, and individual freedom in the gig economy. At its core, we must distinguish between harmless upskilling side-projects and direct conflicts of interest with non-compete violations.",
+    "key_arguments_for": [
+      "Knowledge workers have the fundamental right to utilize their personal off-hours for passion projects, consulting, or supplemental income.",
+      "Diverse side projects sharpen skills, exposing engineers to modern tech stacks that benefit their primary employer.",
+      "Rising inflation and financial obligations make supplementary earnings a pragmatic necessity."
+    ],
+    "key_arguments_against": [
+      "Breaches employer trust and contractual exclusivity clauses signed at appointment.",
+      "Severe risk of proprietary code leakage, intellectual property infringement, and data leakage.",
+      "Mental fatigue leads to burnout, reduced attention span, and substandard daytime performance."
+    ],
+    "real_world_examples": [
+      "Wipro terminating 300 employees in 2022 for directly working for competitor companies simultaneously.",
+      "Companies like Swiggy creating structured moonlighting policies requiring HR disclosure and zero client conflict."
+    ],
+    "thirty_sec_speech": "Moonlighting cannot be evaluated with a blanket yes or no. If an engineer works for a direct competitor or leaks company IP, it is an ethical and legal violation. But if an engineer writes technical blogs or builds open-source libraries in their free time without conflict, it fosters innovation.",
+    "one_min_speech": "Esteemed peers, the root of the moonlighting controversy is transparency and conflict of interest. Companies invest significant capital in training, employee benefits, and proprietary trade secrets. If an employee divides their cognitive energy between two competing firms, output quality deteriorates and IP risks multiply. However, in the 21st-century knowledge economy, absolute exclusivity over personal life is outdated. The progressive path forward is a transparent disclosure policy—similar to Swiggy’s framework—where employees declare side engagements, ensuring zero client overlap, no use of company hardware, and maintained SLA standards.",
+    "conclusion": "Ultimately, ethics in moonlighting comes down to transparency and integrity. Transparent side-projects without conflict should be accommodated, while deceptive dual-employment must be strictly penalized.",
+    "things_to_avoid": [
+      "Confusing building open-source projects with working two full-time competitor payrolls",
+      "Arguing purely emotionally without considering contractual legalities",
+      "Overlooking cybersecurity and intellectual property ownership"
+    ],
+    "follow_up_questions": [
+      "Should companies formally revise employment contracts to accommodate transparent freelancing?",
+      "Where is the legal boundary between an employee's personal creative time and their company contract?"
+    ]
+  },
+  {
+    "id": "gd-4",
+    "topic": "Data Privacy vs National Security: Where should we draw the line?",
+    "category": "Technology Policy & Law",
+    "difficulty": "Hard",
+    "overview": "Deliberating state surveillance, end-to-end encryption, digital personal data protection acts, and the citizen's fundamental right to digital privacy.",
+    "opening_statement": "Good day everyone. In an era dominated by hyper-connected digital infrastructure and cyber-warfare, balancing individual privacy rights with state security is one of democratic society's most delicate balancing acts.",
+    "key_arguments_for": [
+      "National defense requires timely intelligence interception to prevent terrorism, organized crime, and financial fraud.",
+      "Sovereign data governance protects domestic critical infrastructure from foreign adversary cyber-attacks.",
+      "Clear legal intercepts under judicial oversight can co-exist with public safety."
+    ],
+    "key_arguments_against": [
+      "Privacy is a constitutionally recognized fundamental human right (e.g., Puttaswamy judgment in India, GDPR in Europe).",
+      "Weakening encryption creates systemic backdoors that malicious hackers and foreign states will exploit.",
+      "Unchecked mass surveillance creates chilling effects on freedom of expression and dissent."
+    ],
+    "real_world_examples": [
+      "Apple vs FBI controversy regarding creating an iOS backdoor to unlock an iPhone.",
+      "India's Digital Personal Data Protection (DPDP) Act balancing citizen consent with state exemptions."
+    ],
+    "thirty_sec_speech": "Neither absolute surveillance nor total lawless anonymity is sustainable. State interception must be strictly bounded by judicial warrants, proportionality, and independent auditing to ensure national safety never compromises democratic freedoms.",
+    "one_min_speech": "Peers, when we compromise encryption for the sake of surveillance, we do not just give keys to the government; we leave the front door unlocked for state-sponsored cyber attackers and ransomware cartels. Citizens have a fundamental right to data dignity, secure banking, and private communications. At the same time, intelligence agencies must have lawful mechanisms to intercept targeted threats upon demonstrating probable cause. The litmus test must be proportionality, necessity, and independent judicial review—not blanket indiscriminate mass tracking.",
+    "conclusion": "To conclude, national security and individual privacy are not mutually exclusive; they are twin pillars of a resilient democracy. We must champion strong encryption coupled with targeted, judicially sanctioned investigations.",
+    "things_to_avoid": [
+      "Arguing that 'if you have nothing to hide, you have nothing to fear'",
+      "Dismissing legitimate counter-terrorism intelligence needs",
+      "Failing to cite legal frameworks like GDPR or DPDP"
+    ],
+    "follow_up_questions": [
+      "Can client-side scanning algorithms inspect illicit content without breaking end-to-end encryption?",
+      "Who should oversee digital intelligence agencies to prevent political abuse?"
+    ]
+  },
+  {
+    "id": "gd-5",
+    "topic": "Electric Vehicles: Are they truly green or just shifting the carbon footprint?",
+    "category": "Environment & Sustainability",
+    "difficulty": "Medium",
+    "overview": "Analyzing the full lifecycle emissions of EVs—battery raw material mining, coal-based grid charging, recycling challenges—versus internal combustion engines.",
+    "opening_statement": "Hello friends. As the world races toward net-zero emissions, electric vehicles are championed as the ultimate green mobility solution. Yet, an honest ecological audit requires examining the entire lifecycle: from lithium extraction to grid charging.",
+    "key_arguments_for": [
+      "Zero tailpipe emissions drastically improve urban air quality in densely populated cities.",
+      "Electric drivetrains are 85-90% energy efficient compared to only 20-25% for internal combustion engines.",
+      "As renewable energy (solar, wind) powers the electrical grid, EV charging becomes progressively cleaner over time."
+    ],
+    "key_arguments_against": [
+      "Mining lithium, cobalt, and nickel causes significant groundwater depletion, deforestation, and geopolitical friction.",
+      "In economies where electricity is predominantly coal-powered, charging EVs still burns fossil fuels upstream.",
+      "Battery recycling ecosystems and end-of-life toxic waste management are still in their infancy."
+    ],
+    "real_world_examples": [
+      "India's FAME subsidy scheme promoting electric 2-wheelers and public transit buses.",
+      "Lifecycle assessments showing that an EV breaks even with a petrol car's carbon footprint after 25,000 to 40,000 kilometers of driving."
+    ],
+    "thirty_sec_speech": "Electric vehicles are undeniably superior in operational efficiency and urban air cleanliness. However, their true environmental promise is unlocked only when coupled with renewable grid generation and circular battery recycling.",
+    "one_min_speech": "Esteemed peers, calling EVs a 'silver bullet' ignores upstream emissions, but calling them a 'scam' ignores physics. Even when charged from a thermal power plant, an electric motor's thermodynamic efficiency outmatches a small petrol engine by a factor of three. The initial carbon debt incurred during battery manufacturing is paid off within two to three years of active driving. Moving forward, governments must mandate sodium-ion and solid-state battery R&D to reduce reliance on rare-earth minerals, while simultaneously decoupling power grids from coal.",
+    "conclusion": "In summary, EVs represent an essential transitional step toward clean mobility, provided we accelerate renewable power generation and establish responsible battery supply chains.",
+    "things_to_avoid": [
+      "Treating EVs as having zero environmental impact across all stages",
+      "Dismissing EVs completely based on outdated battery lifespan myths",
+      "Ignoring the role of public transportation over individual passenger cars"
+    ],
+    "follow_up_questions": [
+      "Is public electric transit like metro rail and electric buses a higher priority than subsidizing private luxury EVs?",
+      "How can nations ensure human rights compliance in global cobalt and lithium mining chains?"
+    ]
+  },
+  {
+    "id": "gd-6",
+    "topic": "Digital Public Infrastructure: How UPI transformed India's financial landscape",
+    "category": "FinTech & Public Policy",
+    "difficulty": "Easy",
+    "overview": "Examining how open APIs, zero-MDR UPI, Aadhaar, and DigiLocker enabled financial inclusion from roadside vendors to multinational corporations.",
+    "opening_statement": "Good morning. India's Digital Public Infrastructure, anchored by the Unified Payments Interface (UPI), stands as a globally celebrated case study in democratizing access to the formal financial economy.",
+    "key_arguments_for": [
+      "Processed over 14 billion transactions monthly, bringing micro-merchants and street vendors into the formal credit system.",
+      "Interoperable, open-protocol architecture eliminated monopolistic proprietary transaction fees.",
+      "Catalyzed startup innovation in micro-lending, insurance, and wealth management."
+    ],
+    "key_arguments_against": [
+      "Digital illiteracy and sophisticated phishing scams leave rural and elderly citizens vulnerable.",
+      "Zero Merchant Discount Rate (MDR) challenges long-term infrastructure monetization for banks and payment service providers.",
+      "Server outages and network connectivity issues can halt daily commerce in remote areas."
+    ],
+    "real_world_examples": [
+      "Street vendors using QR codes and audio soundboxes for instant transaction confirmation without expensive POS hardware.",
+      "Global adoption of UPI in UAE, Singapore, France, and Sri Lanka for cross-border settlements."
+    ],
+    "thirty_sec_speech": "UPI proved that digital public goods, when built on open architecture, outpace walled-garden private payment schemes. It transitioned India from a cash-heavy society into a global pioneer of real-time digital micro-transactions.",
+    "one_min_speech": "Colleagues, what makes UPI revolutionary is its interoperability. Unlike closed platforms like PayPal or Apple Pay, UPI operates on open protocols managed by NPCI, allowing any bank account to transact with any app instantaneously. This reduced transaction friction to zero, empowering street vendors with formal financial paper trails to access low-interest bank loans. However, as transaction volumes skyrocket, we must invest heavily in cybersecurity, offline UPI protocols for rural dead-zones, and sustainable revenue models for participating banks.",
+    "conclusion": "UPI demonstrates the power of technology as a public equalizer. Strengthening fraud prevention and offline transaction resilience will secure its leadership in the next decade.",
+    "things_to_avoid": [
+      "Forgetting to mention the underlying architecture (NPCI, open APIs, two-factor mobile auth)",
+      "Ignoring digital divide and cyber fraud concerns",
+      "Dominating the group discussion without inviting other perspectives"
+    ],
+    "follow_up_questions": [
+      "Should banks be permitted to reintroduce nominal transaction fees on large peer-to-merchant UPI transactions?",
+      "How can offline payments (UPI Lite / UPI 123Pay) bridge the rural connectivity gap?"
+    ]
+  },
+  {
+    "id": "gd-7",
+    "topic": "Is a College Degree still essential in the age of online certifications and AI?",
+    "category": "Education & Careers",
+    "difficulty": "Medium",
+    "overview": "Evaluating the relevance of traditional four-year campus degrees versus self-paced bootcamps, portfolio projects, and specialized micro-credentials.",
+    "opening_statement": "Hello friends. With open-courseware from MIT and Harvard, micro-credentials, and AI coding tutors readily accessible, the question arises: is the traditional multi-year college degree losing its hegemony?",
+    "key_arguments_for": [
+      "University campuses offer peer networks, incubation cells, collaborative discipline, and social maturation that online courses cannot replicate.",
+      "Degrees provide structured foundational theory (computer architecture, discrete math, compiler design) necessary for complex engineering.",
+      "Remains an objective screening baseline for corporate campus hiring, H1B visas, and postgraduate research."
+    ],
+    "key_arguments_against": [
+      "Skyrocketing tuition costs and outdated college syllabi misaligned with rapid industry needs.",
+      "Tech giants like Google, Apple, and Tesla dropping mandatory degree requirements for demonstrated coding ability.",
+      "Online bootcamps offer agile, modern curriculum (DevOps, Next.js, ML Engineering) in a fraction of the time."
+    ],
+    "real_world_examples": [
+      "Self-taught software engineers and competitive programmers winning Google Summer of Code and hackathons without elite degrees.",
+      "Top product companies continuing to prioritize tier-1 campus recruitment drives due to proven talent aggregation."
+    ],
+    "thirty_sec_speech": "A degree opens the initial screening door and builds foundational rigor, but a portfolio proves actual competence. In today's market, a degree without practical projects is obsolete, while skills backed by a solid foundational degree offer the highest trajectory.",
+    "one_min_speech": "Peers, college education is more than just lectures; it is an ecosystem of teamwork, late-night hackathons, interpersonal growth, and resilience under deadlines. While YouTube and bootcamps teach framework syntax, universities teach systems thinking—how operating systems manage memory, how networks route packets, and how algorithms scale. The problem is not the degree itself, but outdated pedagogical models. Colleges must integrate industry internships, open-source contributions, and AI tooling into their curricula to maintain real-world relevance.",
+    "conclusion": "A college degree remains valuable for foundational rigor and human networking, but individual curiosity and demonstrable skills will always dictate long-term career success.",
+    "things_to_avoid": [
+      "Categorically devaluing formal education as useless",
+      "Ignoring the socio-economic mobility a recognized degree provides to first-generation students",
+      "Confusing practical coding skills with deep computer science engineering fundamentals"
+    ],
+    "follow_up_questions": [
+      "How should universities revamp their assessment methods to prevent students from simply using AI to generate code assignments?",
+      "Can standardized skill badges ever completely replace the institutional trust of a university degree?"
+    ]
+  },
+  {
+    "id": "gd-8",
+    "topic": "Social Media: A catalyst for mental health crisis or a tool for global connection?",
+    "category": "Society & Well-being",
+    "difficulty": "Easy",
+    "overview": "The psychological impact of algorithm-driven feeds, doom-scrolling, dopamine reward loops, versus community support and knowledge dissemination.",
+    "opening_statement": "Good morning. Social media platforms connect over four billion people across geographical borders, yet mounting psychological data links chronic usage with anxiety, sleep deprivation, and depression.",
+    "key_arguments_for": [
+      "Democratizes information access, creative self-expression, and global community building.",
+      "Empowers small entrepreneurs, independent educators, and marginalized groups to amplify their voices.",
+      "Enables rapid coordination during humanitarian crises, disasters, and blood donation drives."
+    ],
+    "key_arguments_against": [
+      "Algorithmic design leverages variable reward schedules (infinite scroll, notifications) to maximize addiction.",
+      "Unrealistic curated lifestyle displays induce social comparison, body image dissatisfaction, and loneliness.",
+      "Amplification of echo chambers, sensationalism, and disinformation polarizes societal cohesion."
+    ],
+    "real_world_examples": [
+      "Whistleblower testimonies from Meta regarding internal studies on Instagram's impact on teenage well-being.",
+      "Global creators building multi-million dollar educational platforms and micro-businesses entirely via LinkedIn and YouTube."
+    ],
+    "thirty_sec_speech": "Social media is an attention engine. When consumed passively, its algorithmic comparison traps erode mental health. When used intentionally as a distribution channel and learning community, it unlocks unprecedented professional leverage.",
+    "one_min_speech": "Friends, technology is inherently agnostic; the danger lies in business models optimized exclusively for time-on-device rather than user value. Infinite scroll feeds and hyper-targeted algorithms exploit our primal need for social validation. For college students, this manifests in shortened attention spans and impostor syndrome. To counter this, digital hygiene must be taught alongside digital literacy. Furthermore, regulatory bodies should mandate ethical algorithm design—such as defaulting algorithmic feeds to chronological order and enforcing mandatory cooldown breaks for minors.",
+    "conclusion": "Social media is an amplifier of human intent. Reclaiming intentional agency and enforcing ethical platform design are essential to preserve mental well-being in a hyper-connected world.",
+    "things_to_avoid": [
+      "Arguing for total digital abstinence, which is impractical in the modern professional landscape",
+      "Dismissing legitimate clinical studies on teenage mental health",
+      "Losing composure when someone disagrees on platform censorship"
+    ],
+    "follow_up_questions": [
+      "Should social media platforms be legally held responsible for algorithmic harms caused to minors?",
+      "What concrete daily habits can students adopt to avoid digital fatigue and cognitive overload?"
+    ]
+  },
+  {
+    "id": "gd-9",
+    "topic": "Startup vs MNC: Which is the ideal career launchpad for fresh engineering graduates?",
+    "category": "Career Strategy",
+    "difficulty": "Easy",
+    "overview": "Weighing the early-career trade-offs between structured training, stability, and brand value in an MNC versus high ownership, rapid learning, and breadth in a fast-paced startup.",
+    "opening_statement": "Hello peers. For graduating engineers, choosing between a multinational corporation and an early-stage startup is often the pivotal first career crossroads. Both present distinct advantages depending on an individual's risk tolerance, learning style, and long-term ambition.",
+    "key_arguments_for": [
+      "MNC: Robust structured training, global client exposure, work-life balance, job security, and resume prestige.",
+      "Startup: Uncapped ownership, wear multiple hats (dev, ops, client calls), fast-track learning curve, direct access to founders.",
+      "ESOPs in high-growth startups offer significant financial upside upon valuation milestones."
+    ],
+    "key_arguments_against": [
+      "MNC: Risk of pigeonholing into narrow legacy maintenance roles; slower promotion cycles and organizational bureaucracy.",
+      "Startup: High burnout risk, ambiguity, lack of formal mentorship, potential financial instability and sudden pivots."
+    ],
+    "real_world_examples": [
+      "Engineering graduates joining early teams of unicorns like Zomato, Zerodha, or Postman mastering full product ownership.",
+      "Engineers at Microsoft, Google, or TCS benefiting from structured graduate rotational programs and global mobility."
+    ],
+    "thirty_sec_speech": "Neither option is universally superior. If you thrive in structured environments with dedicated mentorship and institutional stability, choose an MNC. If you crave autonomy, rapid chaos-driven learning, and immediate business impact, a startup is your sandbox.",
+    "one_min_speech": "Colleagues, early in your 20s, the greatest asset you have is your learning velocity. In a large corporation, you learn enterprise-grade software processes, code review standards, security compliance, and how large systems operate at scale. However, you might only own a single microservice. In a Series-A startup, you might architect the entire database, manage deployment pipelines, and debug production outages on day three. The right choice depends on your personal financial safety net and whether you learn better through structured curriculum or through trial-by-fire ownership.",
+    "conclusion": "In conclusion, both environments build complementary muscles. A well-rounded career often involves experiencing the high-velocity agility of a startup alongside the disciplined scale of a mature enterprise.",
+    "things_to_avoid": [
+      "Belittling MNCs as mere 'monotonous sweatshops' or startups as 'unstable chaos'",
+      "Ignoring the candidate's personal financial commitments and risk appetite",
+      "Giving generic advice without actionable evaluation criteria"
+    ],
+    "follow_up_questions": [
+      "How can a fresh graduate verify the financial health and engineering culture of a startup before accepting an offer?",
+      "Is it easier to transition from an MNC to a startup, or vice versa, after 3 years?"
+    ]
+  },
+  {
+    "id": "gd-10",
+    "topic": "Universal Basic Income (UBI): A necessary safety net for an automated economy?",
+    "category": "Economics & Social Welfare",
+    "difficulty": "Hard",
+    "overview": "Discussing unconditional state-provided cash transfers as a response to AI-driven workforce displacement, poverty eradication, and economic stimulus.",
+    "opening_statement": "Good day participants. As automation disrupts traditional labor markets, Universal Basic Income has moved from radical economic theory into mainstream policy debate as a potential floor against poverty and technological unemployment.",
+    "key_arguments_for": [
+      "Provides an unconditional economic safety net, eliminating bureaucratic welfare leakage and administrative friction.",
+      "Grants workers bargaining power to decline exploitative wages and pursue retraining, entrepreneurship, or caregiving.",
+      "Maintains consumer purchasing power, sustaining macroeconomic demand in highly automated economies."
+    ],
+    "key_arguments_against": [
+      "Astronomical fiscal cost requiring steep taxation that could discourage capital investment and business innovation.",
+      "Risk of disincentivizing labor participation, particularly in essential low-wage service sectors.",
+      "Potential inflationary pressure on housing and basic goods eroding the real value of the cash transfers."
+    ],
+    "real_world_examples": [
+      "Finland's 2-year basic income experiment showing improved mental health and trust in public institutions without dampening employment.",
+      "Direct Benefit Transfers (DBT) and targeted welfare schemes like PM-KISAN in India as practical step-stones."
+    ],
+    "thirty_sec_speech": "UBI provides human dignity in an automated era, ensuring that technology's productivity dividend benefits all of society. However, implementing it requires targeted phasing and progressive fiscal funding to avoid hyperinflation.",
+    "one_min_speech": "Peers, if artificial intelligence replaces routine knowledge labor, the historical link between human work and human survival will be strained. When machines generate an overwhelming share of GDP, consumer demand must be sustained or the economic cycle collapses. UBI recognizes that human worth should not be solely measured by labor market pricing. Opponents argue that people will cease working, but pilot studies across Canada, Kenya, and Finland revealed that beneficiaries used funds to buy tools, fix health issues, and pay for higher education. UBI is an investment in human capital.",
+    "conclusion": "While a universal unconditional payout presents fiscal hurdles today, expanding targeted basic transfers and taxing automation profits can pave the way toward a resilient economic safety net.",
+    "things_to_avoid": [
+      "Confusing UBI with communism; UBI preserves market capitalism and price signals",
+      "Dismissing budgetary constraints without suggesting funding mechanisms (wealth tax, carbon tax, AI dividend)",
+      "Monopolizing conversation time on economic jargon without explaining public impact"
+    ],
+    "follow_up_questions": [
+      "Could an 'AI or Robot Tax' provide the necessary revenue stream to fund basic income experiments?",
+      "Would targeted basic services (free universal healthcare, education, transit) be more effective than unconditional cash?"
+    ]
+  },
+  {
+    "id": "gd-11",
+    "topic": "Cashless Economy: Financial transparency or financial surveillance?",
+    "category": "Economy & Governance",
+    "difficulty": "Medium",
+    "overview": "Assessing the shift away from physical paper currency toward central bank digital currencies (CBDCs) and digital wallets.",
+    "opening_statement": "Hello everyone. The global transition toward a cashless economy promises reduced corruption, seamless tax compliance, and instant commerce. However, it also introduces unprecedented central surveillance and vulnerability to digital outages.",
+    "key_arguments_for": [
+      "Eliminates black money hoards, counterfeiting, and tax evasion by generating transparent transaction trails.",
+      "Dramatically lowers the physical costs of printing, securing, and transporting physical currency.",
+      "Enables frictionless international remittances and seamless automated micro-payments."
+    ],
+    "key_arguments_against": [
+      "Total loss of transactional anonymity; governments or corporations can monitor every purchase.",
+      "Excludes digitally marginalized populations, rural communities, and those without smartphones or internet.",
+      "Vulnerability to systemic banking collapses, cyberattacks, or authoritarian freezing of citizen accounts."
+    ],
+    "real_world_examples": [
+      "Sweden becoming nearly 95% cashless, prompting recent civil defense warnings regarding wartime power outage risks.",
+      "Reserve Bank of India piloting the Digital Rupee (e-Rupee) CBDC for wholesale and retail usage."
+    ],
+    "thirty_sec_speech": "A cashless society offers unmatched velocity and tax compliance. Yet, physical cash must remain a lawful backup to preserve civil liberties, privacy, and economic resilience during emergencies.",
+    "one_min_speech": "Colleagues, convenience must never eclipse freedom. When you pay for a coffee or a book in cash, your purchase is private between you and the vendor. In a 100% digital cashless state, your complete spending history is permanently indexed by financial intermediaries and state databases. While digital transactions are indispensable for modern commerce, preserving physical cash ensures that citizens without bank access are not disenfranchised and protects society against catastrophic cyber-grid failures.",
+    "conclusion": "A hybrid monetary system that embraces digital speed while preserving physical cash as a resilient, anonymous baseline represents the most balanced path forward.",
+    "things_to_avoid": [
+      "Assuming digital access is uniform across all demographics and regions",
+      "Dismissing the genuine security and anti-tax-evasion benefits of digital transactions",
+      "Overlooking cybersecurity vulnerabilities in financial grids"
+    ],
+    "follow_up_questions": [
+      "How can Central Bank Digital Currencies (CBDCs) preserve peer-to-peer cash-like anonymity for small transactions?",
+      "What happens to retail commerce during an extended hurricane or cyber outage in a cashless city?"
+    ]
+  },
+  {
+    "id": "gd-12",
+    "topic": "Open Source vs Proprietary Software: Who is winning the AI race?",
+    "category": "Technology & Open Source",
+    "difficulty": "Medium",
+    "overview": "Debating open-weight models (Llama, Mistral, DeepSeek) versus proprietary frontier models (OpenAI, Anthropic, Google) regarding safety, democratization, and enterprise adoption.",
+    "opening_statement": "Good morning peers. The battle between open-source and proprietary software has defined computer history from Linux to Android. Today, this ideological and commercial conflict is playing out with even higher stakes across Artificial Intelligence.",
+    "key_arguments_for": [
+      "Open-source AI democratizes technology, allowing researchers worldwide to inspect weights, fine-tune locally, and prevent monopoly power.",
+      "Enterprises demand data sovereignty: running open models on private cloud/on-premise infrastructure guarantees confidential data never leaves their firewalls.",
+      "Community-driven optimizations (quantization, LoRA fine-tuning) rapidly compress compute costs."
+    ],
+    "key_arguments_against": [
+      "Proprietary labs command tens of billions of dollars in GPU clusters to train state-of-the-art frontier models that open models lag behind.",
+      "Proprietary platforms offer guaranteed enterprise SLAs, copyright indemnification, and managed safety guardrails.",
+      "Open distribution of powerful model weights poses catastrophic dual-use proliferation risks (cyberattacks, biological weapons guidance)."
+    ],
+    "real_world_examples": [
+      "Meta releasing the Llama series and Mistral AI releasing open-weight foundation models powering thousands of enterprise products.",
+      "Linux dominating the world's supercomputers and cloud servers, demonstrating the eventual long-term triumph of collaborative open infrastructure."
+    ],
+    "thirty_sec_speech": "Proprietary models push the cutting frontier of raw reasoning capability, but open-source models conquer the real-world enterprise deployment layer due to privacy, customization, and cost control.",
+    "one_min_speech": "Friends, history teaches us that developers gravitate toward openness and control. Just as Linux won the server operating system market and Git won version control, open-weight AI models like Llama and Mistral provide enterprises with something no API can offer: total ownership of their intellectual property. While proprietary frontier labs will continue setting new benchmarks on multi-modal reasoning, the vast majority of commercial use cases do not require trillion-parameter models. They require lean, fine-tuned, cost-effective models deployed securely inside company VPCs.",
+    "conclusion": "The AI ecosystem will thrive on a symbiotic relationship: proprietary labs pushing research frontiers, and open-source ecosystems democratizing, optimizing, and securing foundational technology for all.",
+    "things_to_avoid": [
+      "Claiming open source has zero revenue models",
+      "Ignoring the real safety risks of unaligned open-weight models",
+      "Failing to distinguish between open-source code and open-weight models"
+    ],
+    "follow_up_questions": [
+      "Should governments restrict the open release of model weights that exceed specific compute training thresholds?",
+      "How will independent developers compete with mega-corporations that own custom silicon and nuclear-powered data centers?"
+    ]
+  },
+  {
+    "id": "gd-13",
+    "topic": "Cryptocurrency and Web3: Financial revolution or speculative bubble?",
+    "category": "Blockchain & FinTech",
+    "difficulty": "Hard",
+    "overview": "Examining decentralized finance, smart contracts, Bitcoin's store of value thesis, versus volatility, fraud, and regulatory crackdowns.",
+    "opening_statement": "Good day everyone. Over a decade since Bitcoin's creation, cryptocurrency remains intensely polarized: hailed by advocates as a censorship-resistant monetary revolution, and condemned by critics as speculative excess.",
+    "key_arguments_for": [
+      "Provides decentralized, borderless financial sovereignty free from arbitrary currency debasement and hyperinflation.",
+      "Smart contracts automate escrow, lending, and settlement without rent-seeking intermediaries.",
+      "Offers financial tools to populations trapped under unstable authoritarian regimes and collapsing fiat currencies."
+    ],
+    "key_arguments_against": [
+      "Wild price volatility makes cryptocurrencies unsuitable as reliable daily units of account.",
+      "Rampant speculative scams, rug-pulls, and exchange collapses (e.g. FTX) eroding retail investor wealth.",
+      "Severe regulatory scrutiny over money laundering, ransomware ransoms, and lack of consumer protections."
+    ],
+    "real_world_examples": [
+      "El Salvador adopting Bitcoin as legal tender alongside institutional Bitcoin ETFs approved by the US SEC.",
+      "Stablecoins being heavily utilized for cross-border B2B trade and inflation hedging across Latin America and Africa."
+    ],
+    "thirty_sec_speech": "Behind the noise of meme tokens and market speculation lies genuine innovation: programmable money and decentralized settlement. The technology is real, but mainstream adoption demands clear regulatory clarity and consumer safeguards.",
+    "one_min_speech": "Peers, we must decouple underlying blockchain ledger technology from speculative casino trading. Blockchain provides trustless verification—valuable for cross-border remittances, land registry tokenization, and transparent supply chains. However, promising 20% guaranteed yields in unregulated DeFi protocols was mathematical delusion. As institutional capital enters via regulated ETFs and central banks adopt blockchain concepts for CBDCs, the speculative froth is evaporating, leaving behind resilient financial infrastructure.",
+    "conclusion": "In conclusion, cryptocurrency is maturing from an unruly speculative frontier into a regulated asset class and settlement layer for the digital economy.",
+    "things_to_avoid": [
+      "Promoting or shilling specific tokens or coins",
+      "Writing off the entire mathematical innovation of public-key cryptography and consensus algorithms",
+      "Ignoring the severe environmental impact of legacy proof-of-work mining"
+    ],
+    "follow_up_questions": [
+      "How can international financial regulators curb crypto-enabled ransomware without stifling decentralized innovation?",
+      "Are asset-backed stablecoins the true killer app of blockchain technology?"
+    ]
+  },
+  {
+    "id": "gd-14",
+    "topic": "Nuclear Energy: The indispensable backbone for a clean energy transition?",
+    "category": "Energy & Climate",
+    "difficulty": "Medium",
+    "overview": "Debating nuclear fission power—zero carbon baseload reliability, small modular reactors—against high capital expenditure, long lead times, and nuclear waste disposal.",
+    "opening_statement": "Hello peers. As global electricity demand surges—driven by AI data centers, industrial electrification, and EV fleets—solar and wind alone face intermittency hurdles. Nuclear energy presents a potent, zero-carbon baseload alternative.",
+    "key_arguments_for": [
+      "Unmatched energy density and 24/7 reliability, operating regardless of weather or solar availability.",
+      "Highest capacity factor (over 92%) of any energy source, with zero greenhouse gas emissions during operation.",
+      "New Small Modular Reactors (SMRs) offer passive safety systems and lower initial capital hurdles."
+    ],
+    "key_arguments_against": [
+      "Massive upfront capital expenditure and chronic construction delays spanning decades.",
+      "Unresolved long-term political and technical challenges surrounding high-level radioactive waste storage.",
+      "Public fear and catastrophic fallout risks associated with accidents like Chernobyl and Fukushima."
+    ],
+    "real_world_examples": [
+      "France generating over 70% of its electricity from nuclear power with some of Europe's lowest industrial carbon footprints.",
+      "Tech giants like Microsoft and Amazon signing multi-gigawatt power purchase agreements with nuclear plants to power AI infrastructure."
+    ],
+    "thirty_sec_speech": "A clean grid cannot rely on intermittent renewables alone without massive battery storage breakthroughs. Modern nuclear power is an indispensable, high-density partner to wind and solar if we are serious about net-zero goals.",
+    "one_min_speech": "Colleagues, physics does not negotiate with sentiment. Wind and solar are fantastic, but when the sun sets and the wind stops, grids without storage must either ramp up coal and natural gas or face blackouts. Nuclear power produces zero greenhouse emissions while delivering continuous, reliable power on a tiny physical land footprint. Statistically, modern nuclear plants are among the safest industrial facilities on earth per terawatt-hour produced. By investing in modern Small Modular Reactors and fast-neutron recycling, we can power the future cleanly.",
+    "conclusion": "Nuclear power, combined with renewables and smart grid storage, provides the only mathematically viable roadmap to decarbonize global industry while meeting surging power demands.",
+    "things_to_avoid": [
+      "Conflating commercial civilian nuclear power with nuclear weapons proliferation",
+      "Dismissing legitimate economic cost overruns and construction delays",
+      "Ignoring public community consent and waste repository selection"
+    ],
+    "follow_up_questions": [
+      "Why did countries like Germany phase out nuclear power, and what were the immediate emissions consequences?",
+      "Can Small Modular Reactors (SMRs) solve the chronic financing and construction delays of traditional gigawatt reactors?"
+    ]
+  },
+  {
+    "id": "gd-15",
+    "topic": "Should Coding and AI Literacy be mandatory in primary school curricula?",
+    "category": "Education Policy",
+    "difficulty": "Easy",
+    "overview": "Examining whether algorithmic thinking, basic programming, and AI literacy should be taught alongside math and reading from an early age.",
+    "opening_statement": "Good morning everyone. In a world permeated by algorithms and automated decision-making, digital literacy is no longer an elective hobby; it is a foundational life skill akin to literacy and basic arithmetic.",
+    "key_arguments_for": [
+      "Fosters algorithmic thinking, structured logic, and problem decomposition from an early developmental age.",
+      "Demystifies AI and digital media, transforming children from passive screen consumers into active creators.",
+      "Prepares future generations for an increasingly automated, technology-centric economy."
+    ],
+    "key_arguments_against": [
+      "Risk of excessive screen time for young children at the expense of outdoor play, handwriting, and social skills.",
+      "Severe resource disparities: underfunded rural schools lack computers, reliable internet, and qualified teachers.",
+      "Syntax-heavy programming may overwhelm young learners; foundational reading, math, and empathy should take precedence."
+    ],
+    "real_world_examples": [
+      "Estonia and the UK integrating computational thinking into primary curricula since the early 2010s.",
+      "India's National Education Policy (NEP 2020) introducing coding and vocational technology skills from Grade 6 onwards."
+    ],
+    "thirty_sec_speech": "Teaching coding is not about turning every child into a software developer; it is about teaching how to think logically and question the digital systems shaping their lives. Computational logic can and should be taught early.",
+    "one_min_speech": "Friends, when we teach children biology or physics, our goal is not to force them into becoming laboratory scientists; it is to help them understand how the physical world operates. Today, our world is equally governed by software code and algorithmic feeds. Teaching computational thinking—decomposition, pattern recognition, and ethical digital safety—equips children to navigate this reality critically. However, this must emphasize interactive, unplugged logic puzzles rather than forcing five-year-olds to memorize syntax in front of screens.",
+    "conclusion": "Introducing computational thinking and digital safety early empowers children with analytical resilience, provided it is taught thoughtfully without displacing foundational childhood development.",
+    "things_to_avoid": [
+      "Advocating for 8 hours of daily screen time for primary school students",
+      "Focusing on memorizing specific programming syntax rather than computational thinking",
+      "Ignoring the stark digital infrastructure divide between urban and rural schools"
+    ],
+    "follow_up_questions": [
+      "How can schools teach computational thinking without expensive computers ('unplugged coding')?",
+      "What ethical principles should be included in children's AI literacy lessons?"
+    ]
+  },
+  {
+    "id": "gd-16",
+    "topic": "Gig Economy: Liberation of workers or exploitation without safety nets?",
+    "category": "Labor & Economics",
+    "difficulty": "Medium",
+    "overview": "Evaluating on-demand platforms (Uber, Swiggy, Zomato, TaskRabbit) regarding flexible earnings versus missing healthcare, pensions, and minimum wage protections.",
+    "opening_statement": "Hello participants. The gig economy has provided millions with instant, flexible livelihood opportunities. Yet, classifying workers as independent contractors has ignited intense debate over labor exploitation and social security.",
+    "key_arguments_for": [
+      "Offers complete schedule flexibility, autonomy, and low barriers to entry for millions seeking primary or supplementary income.",
+      "Provides rapid economic shock absorption during layoffs and downturns.",
+      "Enables consumers to enjoy affordable, on-demand logistics, transportation, and home services."
+    ],
+    "key_arguments_against": [
+      "Absence of traditional employer benefits: health insurance, paid leave, overtime pay, and retirement pensions.",
+      "Algorithmic management with opaque deactivations, penalty points, and fluctuating incentive schemes.",
+      "Platform workers bear vehicle depreciation, fuel inflation, and road safety risks alone."
+    ],
+    "real_world_examples": [
+      "The UK Supreme Court ruling that Uber drivers are 'workers' entitled to minimum wage and holiday pay.",
+      "Rajasthan passing the Platform-Based Gig Workers (Registration and Welfare) Act establishing a dedicated welfare fund."
+    ],
+    "thirty_sec_speech": "The gig economy offers valuable autonomy, but flexibility should never mean destitution. We need modern portable benefits and algorithmic transparency so gig workers enjoy social security without sacrificing flexible work hours.",
+    "one_min_speech": "Esteemed colleagues, the traditional 9-to-5 employment contract designed in the 20th century does not fit platform logistics. Platforms claim gig workers are micro-entrepreneurs, yet algorithms strictly control their routes, pricing, and ratings. True entrepreneurship requires price-setting power, which gig workers lack. The solution is not to destroy the flexibility that workers cherish, but to create a 'third category' of labor: portable social benefits funded by small per-transaction platform levies that follow the worker regardless of which app they log into.",
+    "conclusion": "To conclude, sustainable gig work requires institutional modernization: protecting worker dignity and healthcare through portable safety nets while preserving dynamic economic flexibility.",
+    "things_to_avoid": [
+      "Vilifying platforms without acknowledging the massive employment they generate",
+      "Treating gig workers as passive victims without recognizing their desire for flexible hours",
+      "Failing to mention legislative milestones like portable benefits and welfare boards"
+    ],
+    "follow_up_questions": [
+      "Who should fund gig worker healthcare: the platform, the consumer via a surcharge, or the government?",
+      "How can algorithms that dispatch and penalize delivery workers be made legally transparent?"
+    ]
+  },
+  {
+    "id": "gd-17",
+    "topic": "Space Exploration vs Eradicating Poverty: Where should global billions be spent?",
+    "category": "Ethics & Global Priorities",
+    "difficulty": "Medium",
+    "overview": "Debating public expenditures on lunar and Mars missions versus immediate terrestrial crises like malnutrition, housing, clean water, and climate adaptation.",
+    "opening_statement": "Good morning everyone. As space agencies land rovers on the Moon and private aerospace companies target Mars, a recurring ethical question emerges: should billions of dollars be spent reaching the stars while millions on Earth lack food and shelter?",
+    "key_arguments_for": [
+      "Space exploration drives breakthrough technologies: satellite weather forecasting, GPS navigation, water purification, and disaster management.",
+      "Earth observation satellites are our most vital tool for monitoring climate change, deforestation, and crop yields.",
+      "Space exploration spending is spent on Earth—employing thousands of engineers, scientists, and manufacturing supply chains."
+    ],
+    "key_arguments_against": [
+      "Hundreds of millions suffer from extreme poverty, stunted malnutrition, and preventable waterborne diseases requiring urgent funding.",
+      "Billionaire space tourism displays glaring wealth inequality while planetary emissions rise.",
+      "Funding deep planetary missions yields uncertain long-term returns compared to direct investments in public healthcare and schools."
+    ],
+    "real_world_examples": [
+      "ISRO's Chandrayaan and Mangalyaan missions executed at remarkably frugal budgets, fueling India's sovereign satellite launch ecosystem.",
+      "NASA space spin-offs resulting in infrared ear thermometers, scratch-resistant lenses, and solar cell efficiencies."
+    ],
+    "thirty_sec_speech": "This is a false dichotomy. Space exploration budget represents a tiny fraction of global military spending, yet satellite technology is precisely what predicts cyclones, saves farmers' crops, and guides emergency disaster relief.",
+    "one_min_speech": "Colleagues, framing this as 'Space vs Earth' misunderstands both economics and science. When nations invest in space programs, no money is launched into the void; every single dollar is invested right here on Earth—funding precision machining, advanced computing, materials science, and STEM jobs. Satellite constellations allow meteorologists to evacuate millions of coastal fishermen before a cyclone strikes, saving countless lives. What humanity should redirect toward poverty alleviation is the trillion-dollar global weapons and military budget, not the humble scientific exploration of our cosmos.",
+    "conclusion": "In summary, space research and terrestrial welfare are deeply complementary. The satellite technologies derived from space science are essential instruments in fighting poverty and monitoring climate resilience.",
+    "things_to_avoid": [
+      "Confusing scientific public space exploration (like ISRO/NASA) with private luxury space tourism",
+      "Assuming space money is literally fired into space rather than invested in domestic industries",
+      "Dismissing the urgent reality of poverty and hunger on earth"
+    ],
+    "follow_up_questions": [
+      "How do satellite communications directly improve healthcare and education access in remote rural areas?",
+      "Should commercial space resource mining (asteroids, lunar regolith) be governed by international treaties?"
+    ]
+  },
+  {
+    "id": "gd-18",
+    "topic": "Deepfakes and Generative Media: The impending crisis of truth and democracy?",
+    "category": "Technology & Cybersecurity",
+    "difficulty": "Hard",
+    "overview": "Examining hyper-realistic AI-generated video, voice cloning, electoral misinformation, the erosion of institutional trust, and cryptographic provenance solutions.",
+    "opening_statement": "Hello friends. With generative AI tools capable of synthesizing realistic audio and video in seconds, we are entering an era of 'zero-trust information', where seeing and hearing can no longer be believed.",
+    "key_arguments_for": [
+      "Democratizes film production, video localization, voice restoration for speech-impaired individuals, and immersive education.",
+      "Promotes technological advancements in computer vision and synthetic dataset generation for privacy-safe AI training."
+    ],
+    "key_arguments_against": [
+      "Voters can be manipulated during elections through fabricated candidate speeches and false breaking news.",
+      "Financial voice-cloning fraud targeting families and corporate wire transfers is skyrocketing.",
+      "The 'Liar's Dividend': actual bad actors can dismiss genuine compromising video evidence as an AI deepfake."
+    ],
+    "real_world_examples": [
+      "Voice cloning scams impersonating corporate CEOs to authorize fraudulent multi-million dollar banking transfers.",
+      "C2PA (Coalition for Content Provenance and Authenticity) initiative embedding cryptographically signed metadata into digital cameras."
+    ],
+    "thirty_sec_speech": "Deepfakes threaten the epistemological foundation of human society. If truth becomes untrustworthy, democratic consensus collapses. We urgently need digital watermarking, cryptographic content provenance, and strict criminal penalties.",
+    "one_min_speech": "Esteemed peers, the greatest threat posed by deepfakes is not merely that citizens will believe false media; it is that they will stop believing anything at all. When any recording can be forged, public trust in journalism, courts of law, and democratic elections unravels. Combating this requires a three-pronged defense: first, technical standards like C2PA that sign media at the camera sensor level; second, mandatory AI disclosure and steep criminal liability for malicious impersonation; and third, widespread public education teaching citizens to verify sources before amplifying sensational content.",
+    "conclusion": "Defending public truth requires treating synthetic media as a critical cybersecurity challenge, combining technological provenance, robust legislation, and media verification literacy.",
+    "things_to_avoid": [
+      "Arguing that technology can easily detect 100% of deepfakes (detection models constantly suffer adversarial degradation)",
+      "Focusing solely on celebrity scandals instead of national security and electoral threats",
+      "Neglecting positive creative and accessibility use cases"
+    ],
+    "follow_up_questions": [
+      "Can social media algorithms be legally mandated to flag unverified synthetic media before it reaches viral velocity?",
+      "How can courts verify the admissibility of video and audio evidence in an age of generative synthesis?"
+    ]
+  },
+  {
+    "id": "gd-19",
+    "topic": "Brain Drain vs Brain Gain: Is talent migration a loss or an asset for developing nations?",
+    "category": "Socio-Economics & Global Talent",
+    "difficulty": "Medium",
+    "overview": "Analyzing skilled professionals emigrating from developing nations like India, balancing loss of domestic taxpayer-subsidized talent with remittances, diaspora networks, and reverse migration.",
+    "opening_statement": "Good morning peers. The migration of elite engineers, doctors, and scientists to developed nations has long been lamented as a brain drain. Yet, in our interconnected global economy, it increasingly manifests as brain circulation and strategic diaspora leverage.",
+    "key_arguments_for": [
+      "Massive remittance inflows bolster domestic foreign exchange reserves and fund family welfare.",
+      "Global diaspora leaders (CEOs of Microsoft, Alphabet, IBM) channel venture capital, technology transfer, and international prestige back home.",
+      "Reverse migration brings world-class architectural experience and venture capital back to fuel domestic startup ecosystems."
+    ],
+    "key_arguments_against": [
+      "Developing nations invest heavily in subsidized premier institutions (IITs, AIIMS), only for the economic fruits to accrue abroad.",
+      "Severe domestic shortages of top-tier medical specialists, scientific researchers, and PhD faculty.",
+      "Exacerbates domestic systemic stagnation when the most vocal, capable citizens leave rather than demanding local governance reforms."
+    ],
+    "real_world_examples": [
+      "India receiving over $120 billion in annual remittances, the highest in the world.",
+      "Successful diaspora returnees founding multi-billion dollar domestic enterprises and venture funds across Bengaluru, Hyderabad, and Gurugram."
+    ],
+    "thirty_sec_speech": "Talent moves where opportunities flourish. Rather than restricting migration, developing nations must build world-class research infrastructure, reduce regulatory red tape, and incentivize global diaspora capital to reinvest at home.",
+    "one_min_speech": "Colleagues, you cannot retain top minds by emotional appeals alone; you retain talent by creating an environment where talent can build world-changing institutions without bureaucratic friction. Historically, engineers left because local industry lacked cutting-edge labs and capital. Today, the dynamic is shifting. The Indian diaspora has built a formidable global bridge, mentoring startups, directing multinational R&D centers to Indian cities, and repatriating billions in venture funding. By investing in indigenous deep-tech research and simplifying business incorporation, developing nations can turn 'brain drain' into permanent 'brain circulation'.",
+    "conclusion": "Talent migration is not a permanent loss if domestic economies create the fertile ground, research funding, and meritocratic governance that welcome returnees and leverage global networks.",
+    "things_to_avoid": [
+      "Questioning the patriotism of professionals who seek global opportunities",
+      "Ignoring the severe doctor and researcher deficits in domestic rural healthcare and public universities",
+      "Overlooking the transformative economic power of foreign remittances"
+    ],
+    "follow_up_questions": [
+      "What concrete policy changes should governments introduce to attract leading NRI scientists back into domestic academia?",
+      "How can public universities retain funded researchers when private global firms offer tenfold compensation?"
+    ]
+  },
+  {
+    "id": "gd-20",
+    "topic": "E-Commerce vs Traditional Retail: Can small neighborhood mom-and-pop shops survive?",
+    "category": "Business & Commerce",
+    "difficulty": "Easy",
+    "overview": "The clash between 10-minute quick-commerce apps, massive e-commerce marketplaces, and local Kirana stores, exploring digital enablement, convenience, and community commerce.",
+    "opening_statement": "Hello participants. The hyper-growth of e-commerce and 10-minute quick-commerce platforms has transformed consumer habits. This sparks an urgent question: will traditional neighborhood retail disappear, or will it adapt and thrive?",
+    "key_arguments_for": [
+      "Quick commerce provides unmatched convenience, real-time inventory tracking, and time-saving for busy urban households.",
+      "Platforms aggregate farm-to-fork supply chains, reducing food spoilage and logistics inefficiencies.",
+      "Open digital protocols like ONDC allow small local stores to list their inventory online without predatory commissions."
+    ],
+    "key_arguments_against": [
+      "Predatory deep-discounting by venture-backed platforms undercuts local shopkeepers' paper-thin margins.",
+      "Erosion of community ties: Kirana stores offer uncollateralized informal credit, relationship trust, and customized service.",
+      "Dark store operations increase urban delivery congestion and pressure delivery partners into hazardous riding conditions."
+    ],
+    "real_world_examples": [
+      "Zepto, Blinkit, and Instamart disrupting traditional grocery delivery models across metro cities.",
+      "Local Kirana stores adopting UPI, WhatsApp ordering, and partnering with hyper-local delivery networks to retain neighborhood loyalty."
+    ],
+    "thirty_sec_speech": "E-commerce wins on speed and catalog depth, but neighborhood Kiranas win on proximity, credit trust, and human touch. The future is an integrated omnichannel landscape where local shops digitize rather than perish.",
+    "one_min_speech": "Friends, Indian retail has a history of remarkable resilience. When supermarkets like Big Bazaar entered two decades ago, people predicted the death of the corner Kirana. Instead, Kirana stores survived because of three unbeatable advantages: zero overhead delivery, informal ledger credit for trusted neighbors, and instant personal relationships. What quick commerce is doing today is undeniably intense, but Kirana store owners are already adapting—taking orders via WhatsApp, accepting UPI, and leveraging open commerce networks like ONDC. Retail is not a zero-sum game; convenience and local community trust will find an equilibrium.",
+    "conclusion": "Traditional retail will not vanish, but it must modernize. Integrating digital ordering and open payment protocols with local trust ensures that neighborhood stores remain indispensable.",
+    "things_to_avoid": [
+      "Dismissing quick commerce as an unsustainable gimmick without recognizing real consumer demand",
+      "Ignoring the genuine livelihood threats faced by small independent merchants",
+      "Failing to discuss open network initiatives like ONDC"
+    ],
+    "follow_up_questions": [
+      "Can Open Network for Digital Commerce (ONDC) genuinely level the playing field against venture-backed quick-commerce giants?",
+      "How can local store owners digitize their inventory without complex software overhead?"
+    ]
+  }
+]

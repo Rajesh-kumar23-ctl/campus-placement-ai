@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test — AI Placement Coach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/aptitude.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/pages/dashboard.html" class="brand-logo">
+                <div class="brand-icon">🎓</div>
+                <span>AI Placement Coach</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/pages/dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="nav-link active">Aptitude</a></li>
+                <li><a href="/pages/gd.html" class="nav-link">GD Simulator</a></li>
+                <li><a href="/pages/interview.html" class="nav-link">AI Interview</a></li>
+                <li><a href="/pages/resume.html" class="nav-link">Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="nav-link">Companies</a></li>
+                <li><a href="/pages/simulation.html" class="nav-link">Simulation</a></li>
+                <li><a href="/pages/progress.html" class="nav-link">Analytics</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/pages/profile.html" class="user-menu-btn">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name-display">Student</span>
+                </a>
+                <button class="btn btn-outline btn-sm logout-btn">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/pages/dashboard.html" class="sidebar-link"><span>📊</span> Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="sidebar-link active"><span>🧮</span> Aptitude Test</a></li>
+                <li><a href="/pages/gd.html" class="sidebar-link"><span>👥</span> Group Discussion</a></li>
+                <li><a href="/pages/interview.html" class="sidebar-link"><span>🎙️</span> AI Mock Interview</a></li>
+                <li><a href="/pages/resume.html" class="sidebar-link"><span>📄</span> Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="sidebar-link"><span>🏢</span> Company Tracks</a></li>
+                <li><a href="/pages/simulation.html" class="sidebar-link"><span>🚀</span> Placement Drive</a></li>
+                <li><a href="/pages/progress.html" class="sidebar-link"><span>📈</span> Analytics</a></li>
+                <li><a href="/pages/profile.html" class="sidebar-link"><span>⚙️</span> Profile Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Test Setup Container (Default View) -->
+            <div id="test-setup-container" class="card" style="max-width: 650px; margin: 40px auto; padding: 36px;">
+                <div style="text-align: center; margin-bottom: 28px;">
+                    <span class="badge badge-primary" style="margin-bottom: 8px;">Cognitive Assessment</span>
+                    <h1 style="font-size: 1.85rem; color: #ffffff; margin-bottom: 8px;">Aptitude Test Configuration</h1>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">Select your category, difficulty level, and time allowance to begin.</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="select-category">Category</label>
+                    <select id="select-category" class="form-control">
+                        <option value="all" selected>All Categories (Balanced Mix)</option>
+                        <option value="quantitative">Quantitative Aptitude</option>
+                        <option value="logical">Logical Reasoning</option>
+                        <option value="verbal">Verbal Ability</option>
+                        <option value="data_interpretation">Data Interpretation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="select-difficulty">Difficulty Level</label>
+                    <select id="select-difficulty" class="form-control">
+                        <option value="all" selected>Mixed (Real Exam Pattern)</option>
+                        <option value="easy">Easy (Foundation Practice)</option>
+                        <option value="medium">Medium (Standard Placement Level)</option>
+                        <option value="hard">Hard (Tier-1 Product Companies)</option>
+                    </select>
+                </div>
+
+                <div class="auth-grid-2">
+                    <div class="form-group">
+                        <label class="form-label" for="select-count">Number of Questions</label>
+                        <select id="select-count" class="form-control">
+                            <option value="5">5 Questions (Quick Drill)</option>
+                            <option value="10" selected>10 Questions (Standard)</option>
+                            <option value="15">15 Questions (Thorough)</option>
+                            <option value="20">20 Questions (Full Assessment)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="select-timer">Timer Duration</label>
+                        <select id="select-timer" class="form-control">
+                            <option value="10">10 Minutes</option>
+                            <option value="15" selected>15 Minutes</option>
+                            <option value="20">20 Minutes</option>
+                            <option value="30">30 Minutes</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="start-test-btn" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 16px;">
+                    Start Assessment ➔
+                </button>
+            </div>
+
+            <!-- Test Runner Container (Shown during test) -->
+            <div id="test-runner-container" style="display: none;">
+                <!-- Header Status Bar -->
+                <div class="test-header-bar">
+                    <div style="display: flex; align-items: center; gap: 14px;">
+                        <span id="question-counter" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: #ffffff;">Question 1 / 10</span>
+                        <span id="question-category-badge" class="badge badge-secondary">Quantitative</span>
+                        <span id="question-difficulty-badge" class="badge badge-warning">MEDIUM</span>
+                    </div>
+                    <div class="timer-box">
+                        <span>⏱️</span>
+                        <span id="timer-display">15:00</span>
+                    </div>
+                </div>
+
+                <!-- Test Layout (Question + Palette) -->
+                <div class="test-layout">
+                    <!-- Left: Question Card -->
+                    <div class="question-card">
+                        <div>
+                            <div class="question-meta">
+                                <span style="font-size: 0.85rem; color: var(--text-muted);">Choose the best single option:</span>
+                            </div>
+
+                            <div id="question-text" class="question-text">
+                                Question loading...
+                            </div>
+
+                            <div id="options-container" class="options-list">
+                                <!-- Options dynamically rendered -->
+                            </div>
+                        </div>
+
+                        <!-- Action Bar -->
+                        <div class="question-nav-actions">
+                            <div style="display: flex; gap: 10px;">
+                                <button id="btn-prev" class="btn btn-secondary btn-sm">⬅ Previous</button>
+                                <button id="btn-flag" class="btn btn-outline btn-sm">🏳️ Mark for Review</button>
+                            </div>
+                            <div style="display: flex; gap: 10px;">
+                                <button id="btn-next" class="btn btn-primary btn-sm">Next ➔</button>
+                                <button id="btn-submit-test" class="btn btn-success btn-sm">Submit Test</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Question Palette -->
+                    <div class="palette-card">
+                        <h4 style="font-size: 0.95rem; color: #ffffff; margin-bottom: 8px;">Question Navigator</h4>
+                        <div style="display: flex; gap: 8px; font-size: 0.75rem; color: var(--text-muted); margin-bottom: 12px; flex-wrap: wrap;">
+                            <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--success); display: inline-block;"></span> Answered</span>
+                            <span style="display: flex; align-items: center; gap: 4px;"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--warning); display: inline-block;"></span> Review</span>
+                        </div>
+
+                        <div id="palette-grid" class="palette-grid">
+                            <!-- Palette buttons dynamically populated -->
+                        </div>
+
+                        <button onclick="confirmSubmission()" class="btn btn-outline btn-sm" style="width: 100%;">
+                            Finish Assessment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/aptitude.js"></script>
+</body>
+</html>

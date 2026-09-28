@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume AI Analyzer — AI Placement Coach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/resume.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/pages/dashboard.html" class="brand-logo">
+                <div class="brand-icon">🎓</div>
+                <span>AI Placement Coach</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/pages/dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="nav-link">Aptitude</a></li>
+                <li><a href="/pages/gd.html" class="nav-link">GD Simulator</a></li>
+                <li><a href="/pages/interview.html" class="nav-link">AI Interview</a></li>
+                <li><a href="/pages/resume.html" class="nav-link active">Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="nav-link">Companies</a></li>
+                <li><a href="/pages/simulation.html" class="nav-link">Simulation</a></li>
+                <li><a href="/pages/progress.html" class="nav-link">Analytics</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/pages/profile.html" class="user-menu-btn">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name-display">Student</span>
+                </a>
+                <button class="btn btn-outline btn-sm logout-btn">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/pages/dashboard.html" class="sidebar-link"><span>📊</span> Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="sidebar-link"><span>🧮</span> Aptitude Test</a></li>
+                <li><a href="/pages/gd.html" class="sidebar-link"><span>👥</span> Group Discussion</a></li>
+                <li><a href="/pages/interview.html" class="sidebar-link"><span>🎙️</span> AI Mock Interview</a></li>
+                <li><a href="/pages/resume.html" class="sidebar-link active"><span>📄</span> Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="sidebar-link"><span>🏢</span> Company Tracks</a></li>
+                <li><a href="/pages/simulation.html" class="sidebar-link"><span>🚀</span> Placement Drive</a></li>
+                <li><a href="/pages/progress.html" class="sidebar-link"><span>📈</span> Analytics</a></li>
+                <li><a href="/pages/profile.html" class="sidebar-link"><span>⚙️</span> Profile Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <div>
+                    <h1 class="page-title">Resume AI Intelligence</h1>
+                    <p class="page-subtitle">Upload your resume to extract skills, detect project architectures, and generate authentic interview questions.</p>
+                </div>
+            </div>
+
+            <!-- Upload Dropzone -->
+            <div id="resume-dropzone" class="resume-upload-zone">
+                <div class="upload-icon-circle">📂</div>
+                <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 6px;">Click or Drag & Drop your Resume</h3>
+                <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 16px;">Supports PDF and DOCX files up to 10MB</p>
+                <button class="btn btn-outline btn-sm" onclick="event.stopPropagation(); document.getElementById('resume-file-input').click();">
+                    Select File from Computer
+                </button>
+                <input type="file" id="resume-file-input" style="display: none;" accept=".pdf,.docx">
+            </div>
+
+            <!-- Parsed Analysis Container -->
+            <div id="resume-analysis-container" style="display: none;">
+                <div class="card" style="padding: 28px; margin-bottom: 24px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <div>
+                            <span class="badge badge-success" style="margin-bottom: 6px;">PARSED SUCCESSFUL</span>
+                            <h2 style="font-size: 1.4rem; color: #ffffff;">Executive Summary</h2>
+                        </div>
+                        <span id="resume-filename-tag" class="badge badge-secondary">resume.pdf</span>
+                    </div>
+                    <p id="resume-summary-text" style="font-size: 0.95rem; color: var(--text-primary); line-height: 1.6;"></p>
+                </div>
+
+                <div class="auth-grid-2" style="margin-bottom: 24px;">
+                    <!-- Detected Skills -->
+                    <div class="card" style="padding: 24px;">
+                        <h3 style="font-size: 1.15rem; color: #ffffff; margin-bottom: 8px;">Detected Skills</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">Core technologies and languages extracted from your profile:</p>
+                        <div id="skills-cloud" class="skills-cloud"></div>
+                    </div>
+
+                    <!-- Highlighted Projects -->
+                    <div class="card" style="padding: 24px;">
+                        <h3 style="font-size: 1.15rem; color: #ffffff; margin-bottom: 8px;">Extracted Projects</h3>
+                        <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 12px;">Key engineering work detected for technical rounds:</p>
+                        <div id="projects-list"></div>
+                    </div>
+                </div>
+
+                <!-- Potential Interview Questions -->
+                <div class="card" style="padding: 28px; margin-bottom: 24px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <div>
+                            <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 4px;">Potential Resume Interview Questions</h3>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary);">Direct questions interviewers are likely to ask based strictly on your projects:</p>
+                        </div>
+                        <button id="btn-resume-interview" class="btn btn-primary">
+                            🎙️ Start Interview From Resume ➔
+                        </button>
+                    </div>
+
+                    <div id="potential-questions-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/resume.js"></script>
+</body>
+</html>

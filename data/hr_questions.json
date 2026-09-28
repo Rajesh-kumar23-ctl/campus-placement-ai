@@ -1,0 +1,259 @@
+[
+  {
+    "id": "hr-1",
+    "question": "Tell me about yourself and walk me through your key academic highlights.",
+    "category": "Introduction",
+    "difficulty": "easy",
+    "ideal_points": [
+      "Crisp summary of education, major, and technical interests",
+      "Key projects or internships with measurable impact",
+      "Extracurricular leadership or coding competitions",
+      "Why you are passionate about this role/industry"
+    ],
+    "tips": "Use the Present-Past-Future formula. Keep it within 90-120 seconds.",
+    "sample_answer": "I am a final-year Computer Science Engineering student with a strong foundation in full-stack web development and cloud technologies. Over my academic journey, I built an end-to-end placement tracking portal that automated assessments for over 400 peers. During my third-year internship, I worked with REST APIs and Docker containerization. Outside coursework, I led our college coding club and participated in two national hackathons. Looking forward, I am eager to apply my problem-solving skills and learn enterprise-scale software engineering at your organization."
+  },
+  {
+    "id": "hr-2",
+    "question": "Why do you want to join our company specifically?",
+    "category": "Company Alignment",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Specific knowledge of company culture, products, or engineering initiatives",
+      "Alignment between company mission and personal career goals",
+      "Desire for continuous learning and long-term contribution"
+    ],
+    "tips": "Avoid generic responses like 'It's a big MNC'. Mention specific tech stacks, training programs, or recent company initiatives.",
+    "sample_answer": "I have been closely following your engineering blog, specifically how your team transitioned to cloud-native microservices to handle millions of real-time transactions. As someone who loves building scalable backend systems, joining a culture that values engineering craftsmanship and active mentorship is my top priority. I am excited to contribute to high-impact products while growing alongside industry experts."
+  },
+  {
+    "id": "hr-3",
+    "question": "What are your greatest strengths and what is one real area of improvement?",
+    "category": "Self Awareness",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Strength supported by a real project or academic example",
+      "Genuine weakness that is not a masked strength, with active corrective steps being taken"
+    ],
+    "tips": "Do not say 'I am a perfectionist'. Pick a real technical or behavioral area you are actively improving.",
+    "sample_answer": "My greatest strength is analytical problem-solving and persistence when debugging complex system issues. For example, during a hackathon, I spent four hours profiling memory leaks to optimize our server throughput before the deadline. An area I am actively working on is public speaking in large unstructured forums. While I am comfortable in small technical design reviews, I recognized this gap and joined Toastmasters, where I now deliver bi-weekly impromptu speeches to build spontaneous confidence."
+  },
+  {
+    "id": "hr-4",
+    "question": "Describe a situation where you had a conflict with a teammate and how you resolved it.",
+    "category": "Teamwork & Conflict",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Use STAR format (Situation, Task, Action, Result)",
+      "Focus on professional alignment rather than personal friction",
+      "Emphasis on communication, objective data, and collaborative consensus"
+    ],
+    "tips": "Show emotional maturity, active listening, and a commitment to project outcomes.",
+    "sample_answer": "During our final semester capstone project, my teammate and I disagreed on whether to use MongoDB or PostgreSQL. He favored Mongo for rapid schema changes, whereas I advocated PostgreSQL for relational integrity. Instead of arguing opinion, I set up a small benchmark measuring query performance for our specific foreign-key heavy data model. When we reviewed the benchmarks together, we realized relational ACID compliance was critical for our user transactions. We agreed on PostgreSQL and delivered the project three days ahead of schedule with zero data anomalies."
+  },
+  {
+    "id": "hr-5",
+    "question": "Where do you see yourself in 3 to 5 years?",
+    "category": "Career Vision",
+    "difficulty": "easy",
+    "ideal_points": [
+      "Mastery of core software engineering fundamentals in years 1-2",
+      "Taking ownership of architectural modules and mentoring juniors in years 3-5",
+      "Commitment to continuous technical certifications and domain leadership"
+    ],
+    "tips": "Show realistic ambition and loyalty to career growth rather than jumping titles prematurely.",
+    "sample_answer": "In the next 2 years, my goal is to thoroughly master your engineering codebase, write clean production code, and earn relevant cloud certifications. By years 3 to 5, I envision myself taking end-to-end technical ownership of key features, mentoring incoming associate engineers, and participating in system design decisions that drive business reliability."
+  },
+  {
+    "id": "hr-6",
+    "question": "Tell me about a time you failed or missed a deadline, and what you learned from it.",
+    "category": "Resilience & Accountability",
+    "difficulty": "hard",
+    "ideal_points": [
+      "Honest admission of an error or planning oversight",
+      "Immediate mitigation and communication with stakeholders",
+      "Root-cause analysis and systemic prevention implemented afterwards"
+    ],
+    "tips": "Do not blame external circumstances or team members. Own the outcome and focus on growth.",
+    "sample_answer": "In my third year, I committed to building a multi-tenant file storage module for our college symposium within two weeks. I underestimated the complexity of AWS S3 pre-signed URL security and realized two days before the event that I wouldn't finish in time. Rather than hiding it, I immediately alerted my faculty coordinator, offered a working scoped-down version for launch, and worked extra hours over the weekend to patch the full security layer. That experience taught me to build buffer into estimation and break complex tasks into smaller verifiable milestones."
+  },
+  {
+    "id": "hr-7",
+    "question": "Are you comfortable relocating and working in rotational shifts if the business demands it?",
+    "category": "Flexibility & Mobility",
+    "difficulty": "easy",
+    "ideal_points": [
+      "Clear affirmative response regarding geographic mobility",
+      "Understanding of global delivery models and 24/7 uptime requirements",
+      "Enthusiasm for experiencing new cities and collaborative environments"
+    ],
+    "tips": "Be honest, positive, and acknowledge that early career learning benefits from global project exposure.",
+    "sample_answer": "Yes, absolutely. As a fresher, I consider relocation an exciting opportunity to immerse myself in new corporate cultures and expand my professional network. Furthermore, I understand that supporting enterprise clients across global time zones occasionally demands rotational schedules, and I am completely flexible to meet business needs."
+  },
+  {
+    "id": "hr-8",
+    "question": "How do you prioritize your work when faced with multiple urgent deadlines?",
+    "category": "Time Management",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Eisenhower Matrix (Urgent vs Important)",
+      "Proactive stakeholder communication and managing expectations",
+      "Breaking tasks into atomic deliverables and eliminating distractions"
+    ],
+    "tips": "Mention concrete tools like Trello, Notion, or calendar time-blocking.",
+    "sample_answer": "I rely on the Urgent vs Important framework. When deadlines collide, I first categorize tasks based on business impact and dependencies. If two critical items conflict, I immediately communicate with my lead to clarify priorities rather than guessing in silence. I then time-block 90-minute deep-work intervals on my calendar, turning off notifications to execute without context-switching."
+  },
+  {
+    "id": "hr-9",
+    "question": "How do you stay up-to-date with rapid changes in software engineering and AI?",
+    "category": "Continuous Learning",
+    "difficulty": "easy",
+    "ideal_points": [
+      "Specific sources: Tech newsletters, engineering blogs, GitHub trending, podcasts",
+      "Hands-on experimentation through side projects rather than passive reading",
+      "Contributing to developer forums or college tech communities"
+    ],
+    "tips": "Name real resources like Hacker News, ByteByteGo, AWS blogs, or specific YouTube channels.",
+    "sample_answer": "I allocate 30 minutes every morning to read engineering blogs like ByteByteGo, The Pragmatic Engineer, and Hacker News. But more importantly, I learn by building. When FastAPI released newer async features or when Docker introduced improved multi-stage builds, I refactored my personal hobby projects to test the differences hands-on."
+  },
+  {
+    "id": "hr-10",
+    "question": "Tell me about a time you had to work with someone very difficult or unproductive in a team.",
+    "category": "Interpersonal Skills",
+    "difficulty": "hard",
+    "ideal_points": [
+      "Empathy to understand underlying bottlenecks or personal hurdles",
+      "Direct, respectful private conversation to align on expectations",
+      "Maintaining overall project delivery without escalating unnecessarily"
+    ],
+    "tips": "Focus on the behavior and workflow, never attack personality.",
+    "sample_answer": "During our database course project, one team member was consistently missing standups and delaying his module. Instead of complaining to the professor, I had a private coffee chat with him to check in. It turned out he was struggling with basic Git merge conflicts and felt embarrassed to ask publicly. I spent an evening pair-programming with him on Git branches and split his remaining tasks into smaller daily chunks. He gained confidence, delivered his module, and our team scored an A grade."
+  },
+  {
+    "id": "hr-11",
+    "question": "What would you do if your project manager asked you to cut corners on code quality or testing to meet a tight deadline?",
+    "category": "Ethics & Quality",
+    "difficulty": "hard",
+    "ideal_points": [
+      "Distinguish between intentional technical debt vs catastrophic security/reliability risks",
+      "Communicate risks objectively with data and trade-offs",
+      "Propose pragmatic compromises: reduce non-essential scope rather than eliminate critical security tests"
+    ],
+    "tips": "Show you are both a responsible engineer and a pragmatic business partner.",
+    "sample_answer": "I would evaluate the nature of the corner being cut. If it involves critical security validation, data integrity, or core error handling, I would respectfully explain the business risk—highlighting that a production outage or data breach costs far more than a one-day delay. Instead of just saying 'no', I would propose pragmatic alternatives, such as deselecting secondary non-critical features or deploying a phased release, while documenting required technical debt in the backlog to be resolved immediately in the next sprint."
+  },
+  {
+    "id": "hr-12",
+    "question": "What is the biggest misconception people have about you?",
+    "category": "Self Reflection",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Insightful, balanced perspective",
+      "Shows how you intentionally overcome first impressions"
+    ],
+    "tips": "Keep it professional and positive.",
+    "sample_answer": "Because I am naturally quiet when analyzing a problem in the initial minutes of a meeting, some people initially assume I am passive. However, once I synthesize the context, I become one of the most active contributors, outlining structured solutions and organizing team tasks. I've learned to vocalize early by acknowledging points so peers know I am actively engaged."
+  },
+  {
+    "id": "hr-13",
+    "question": "Why should we hire you over other qualified candidates from your batch?",
+    "category": "Value Proposition",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Unique intersection of technical competence and soft skills",
+      "Fast learning velocity and proven self-starter attitude",
+      "High ownership and adaptability to unfamiliar technologies"
+    ],
+    "tips": "Never disparage peers. Highlight your individual drive, demonstrated projects, and passion for the specific role.",
+    "sample_answer": "While my peers are equally hardworking, what sets me apart is my relentless execution velocity and end-to-end ownership. I don't just write code; I care about deployment, documentation, and user feedback. When building my college placement portal, I learned Docker and Linux server administration on my own because our team needed production hosting. I bring that same proactive, can-do problem solving to your engineering team every single day."
+  },
+  {
+    "id": "hr-14",
+    "question": "How do you handle receiving negative or critical feedback on your work?",
+    "category": "Coachability & Growth Mindset",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Separate personal ego from code critique",
+      "Ask clarifying questions to understand the underlying principles",
+      "Actively implement improvements and follow up"
+    ],
+    "tips": "Emphasize code reviews as learning opportunities.",
+    "sample_answer": "I treat critical feedback as a gift that accelerates my learning. During my internship code reviews, a senior engineer left 14 comments requesting refactoring on my pull request. Initially it was humbling, but I went through each comment, scheduled a 15-minute sync to understand why his suggested design pattern was cleaner, and refactored the entire branch. In subsequent PRs, my comment count dropped to two. Separating my ego from my code allows me to grow rapidly."
+  },
+  {
+    "id": "hr-15",
+    "question": "Do you prefer working independently or collaboratively as part of a team?",
+    "category": "Work Style",
+    "difficulty": "easy",
+    "ideal_points": [
+      "Appreciation for both modes at appropriate phases",
+      "Collaboration for system architecture, brainstorming, and alignment",
+      "Independent focus for deep implementation and debugging"
+    ],
+    "tips": "Show flexibility; software development requires both collaborative design and individual deep work.",
+    "sample_answer": "I thrive in an environment that blends both. Collaboration is essential during system design, sprint planning, and code reviews because multiple perspectives catch blind spots. Once the architecture is aligned, I appreciate independent deep-work blocks to write clean, focused code and unit tests. Then, I bring the work back to the team for integration."
+  },
+  {
+    "id": "hr-16",
+    "question": "What motivates you to come to work every day?",
+    "category": "Intrinsic Motivation",
+    "difficulty": "easy",
+    "ideal_points": [
+      "Joy of solving complex technical puzzles",
+      "Knowing code impacts real end-users",
+      "Being surrounded by curious, high-caliber peers"
+    ],
+    "tips": "Connect personal passion with impact.",
+    "sample_answer": "What drives me most is the tangible impact of software—writing logic on a screen that simplifies life for thousands of real people. Seeing users successfully complete an exam on my portal or getting positive user feedback gives me immense satisfaction. Furthermore, being surrounded by mentors from whom I can learn every day keeps me energized."
+  },
+  {
+    "id": "hr-17",
+    "question": "Can you describe a leadership role you took on during your college years?",
+    "category": "Leadership",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Concrete initiative, team size, challenges, and measurable outcome",
+      "Inclusivity, delegation, and motivating team members"
+    ],
+    "tips": "Leadership doesn't require a formal title; leading an initiative or mentoring peers counts.",
+    "sample_answer": "As the Technical Lead for our department's annual symposium, I led a committee of 12 students. We were responsible for building the event portal, hosting coding competitions, and coordinating logistics for 600 participants. When the server crashed 30 minutes before the coding round due to traffic spikes, I calmly delegated traffic routing to a mirror instance while I increased database connection pool sizes. We resolved the bottleneck within 8 minutes and completed the contest successfully."
+  },
+  {
+    "id": "hr-18",
+    "question": "If you are given a project using a programming language you have never used before, what is your approach?",
+    "category": "Adaptability",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Systematic learning strategy: official docs, syntax mapping to known languages, building a toy project",
+      "Reviewing existing team codebases for established idiomatic patterns",
+      "Seeking timely feedback from senior colleagues"
+    ],
+    "tips": "Emphasize that core computational thinking and design patterns transcend specific syntax.",
+    "sample_answer": "Core computer science concepts—data structures, memory models, asynchronous I/O—are largely transferable across languages. My first step is reviewing official documentation and building a small CRUD application to understand syntax, package management, and testing conventions. Next, I inspect our team's existing production repositories to adopt idiomatic style and architectural conventions. If I hit an ambiguous design choice, I consult a senior peer with specific, researched questions."
+  },
+  {
+    "id": "hr-19",
+    "question": "What are your salary expectations for this role?",
+    "category": "Compensation & Negotiation",
+    "difficulty": "medium",
+    "ideal_points": [
+      "Knowledge of industry benchmarks for freshers",
+      "Focus on learning opportunities, role fit, and company standards",
+      "Openness to standard campus recruitment bands"
+    ],
+    "tips": "As a fresher, express confidence in the company's established compensation standards while prioritizing growth.",
+    "sample_answer": "As a fresher, my primary priority is joining a forward-thinking engineering culture where I can build impactful software and accelerate my career. I trust that your organization offers competitive compensation in line with industry standards and internal pay bands for graduate engineers, and I am very open to the package offered."
+  },
+  {
+    "id": "hr-20",
+    "question": "Do you have any questions for me?",
+    "category": "Closing & Curiosity",
+    "difficulty": "easy",
+    "ideal_points": [
+      "Thoughtful, researched questions about engineering culture, mentorship, or future initiatives",
+      "Demonstrates high interest and active listening during the interview"
+    ],
+    "tips": "Never say 'No, I don't have any questions'. Asking insightful questions leaves a memorable impression.",
+    "sample_answer": "Yes, thank you for asking! What does a typical onboarding experience look like for a graduate engineer joining your team in the first 90 days? And what is the most rewarding technical challenge your engineering team is currently solving?"
+  }
+]

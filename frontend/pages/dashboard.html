@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — AI Placement Coach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/pages/dashboard.html" class="brand-logo">
+                <div class="brand-icon">🎓</div>
+                <span>AI Placement Coach</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/pages/dashboard.html" class="nav-link active">Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="nav-link">Aptitude</a></li>
+                <li><a href="/pages/gd.html" class="nav-link">GD Simulator</a></li>
+                <li><a href="/pages/interview.html" class="nav-link">AI Interview</a></li>
+                <li><a href="/pages/resume.html" class="nav-link">Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="nav-link">Companies</a></li>
+                <li><a href="/pages/simulation.html" class="nav-link">Simulation</a></li>
+                <li><a href="/pages/progress.html" class="nav-link">Analytics</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/pages/profile.html" class="user-menu-btn">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name-display">Student</span>
+                </a>
+                <button class="btn btn-outline btn-sm logout-btn">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/pages/dashboard.html" class="sidebar-link active"><span>📊</span> Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="sidebar-link"><span>🧮</span> Aptitude Test</a></li>
+                <li><a href="/pages/gd.html" class="sidebar-link"><span>👥</span> Group Discussion</a></li>
+                <li><a href="/pages/interview.html" class="sidebar-link"><span>🎙️</span> AI Mock Interview</a></li>
+                <li><a href="/pages/resume.html" class="sidebar-link"><span>📄</span> Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="sidebar-link"><span>🏢</span> Company Tracks</a></li>
+                <li><a href="/pages/simulation.html" class="sidebar-link"><span>🚀</span> Placement Drive</a></li>
+                <li><a href="/pages/progress.html" class="sidebar-link"><span>📈</span> Analytics</a></li>
+                <li><a href="/pages/profile.html" class="sidebar-link"><span>⚙️</span> Profile Settings</a></li>
+            </ul>
+            <div style="padding: 16px; background: var(--bg-surface); border-radius: var(--radius-md); font-size: 0.82rem; color: var(--text-muted);">
+                <div style="font-weight: 700; color: #fff; margin-bottom: 2px;">Placement Coach</div>
+                <span>Version 1.0.0 • Autonomous</span>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="main-content">
+            <!-- AI Provider Status Banner -->
+            <div id="ai-status-banner" class="practice-mode-banner" style="display: none;"></div>
+
+            <!-- Welcome Greeting Banner -->
+            <div class="welcome-banner">
+                <div class="welcome-info">
+                    <h1 id="greeting-text">Welcome back 👋</h1>
+                    <p>Track: <span id="target-role-badge" class="badge badge-primary">Software Developer</span> • Keep up your daily preparation streak!</p>
+                </div>
+                <div style="display: flex; gap: 12px;">
+                    <a href="/pages/simulation.html" class="btn btn-primary btn-sm">Start Placement Simulation ➔</a>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Left Column -->
+                <div>
+                    <!-- Placement Readiness Hero Card -->
+                    <div class="readiness-hero-card">
+                        <div>
+                            <span class="badge badge-success" style="margin-bottom: 8px;">CALIBRATED METRIC</span>
+                            <h2 style="font-size: 1.5rem; color: #ffffff; margin-bottom: 6px;">Placement Readiness</h2>
+                            <p style="font-size: 0.9rem; max-width: 440px;">Synthesized across Aptitude (25%), GD (20%), Technical (30%), HR (15%), and Communication (10%).</p>
+                        </div>
+                        <div class="readiness-ring-wrap">
+                            <svg width="110" height="110">
+                                <circle cx="55" cy="55" r="45" stroke="var(--bg-surface)" stroke-width="8" fill="none" />
+                                <circle id="readiness-ring" cx="55" cy="55" r="45" stroke="var(--success)" stroke-width="8" stroke-linecap="round" fill="none" />
+                            </svg>
+                            <div id="readiness-percentage" class="readiness-percent-text">0%</div>
+                        </div>
+                    </div>
+
+                    <!-- Domain Cards Grid -->
+                    <div class="domain-metrics-grid">
+                        <div class="domain-card">
+                            <div class="domain-header">
+                                <span class="domain-name">Aptitude</span>
+                                <span>🧮</span>
+                            </div>
+                            <div id="score-aptitude" class="domain-score">0%</div>
+                            <div class="progress-track"><div id="fill-aptitude" class="progress-fill" style="width: 0%;"></div></div>
+                        </div>
+
+                        <div class="domain-card">
+                            <div class="domain-header">
+                                <span class="domain-name">GD Round</span>
+                                <span>👥</span>
+                            </div>
+                            <div id="score-gd" class="domain-score">0%</div>
+                            <div class="progress-track"><div id="fill-gd" class="progress-fill" style="width: 0%;"></div></div>
+                        </div>
+
+                        <div class="domain-card">
+                            <div class="domain-header">
+                                <span class="domain-name">Technical</span>
+                                <span>💻</span>
+                            </div>
+                            <div id="score-technical" class="domain-score">0%</div>
+                            <div class="progress-track"><div id="fill-technical" class="progress-fill" style="width: 0%;"></div></div>
+                        </div>
+
+                        <div class="domain-card">
+                            <div class="domain-header">
+                                <span class="domain-name">HR Fit</span>
+                                <span>🤝</span>
+                            </div>
+                            <div id="score-hr" class="domain-score">0%</div>
+                            <div class="progress-track"><div id="fill-hr" class="progress-fill" style="width: 0%;"></div></div>
+                        </div>
+
+                        <div class="domain-card">
+                            <div class="domain-header">
+                                <span class="domain-name">Comm.</span>
+                                <span>🗣️</span>
+                            </div>
+                            <div id="score-communication" class="domain-score">0%</div>
+                            <div class="progress-track"><div id="fill-communication" class="progress-fill" style="width: 0%;"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Main Action Tiles -->
+                    <h3 style="font-size: 1.25rem; margin-bottom: 16px; color: #ffffff;">Launch Preparation Modules</h3>
+                    <div class="quick-actions-grid">
+                        <a href="/pages/aptitude.html" class="action-tile">
+                            <div class="action-tile-icon" style="background: rgba(99, 102, 241, 0.15); color: var(--primary);">🧮</div>
+                            <div>
+                                <h4 class="action-tile-title">Take Aptitude Test</h4>
+                                <p class="action-tile-desc">50+ realistic collegiate questions across Quant, Logical, and Verbal.</p>
+                            </div>
+                        </a>
+
+                        <a href="/pages/gd.html" class="action-tile">
+                            <div class="action-tile-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--secondary);">👥</div>
+                            <div>
+                                <h4 class="action-tile-title">Practice GD</h4>
+                                <p class="action-tile-desc">Simulated arena with AI moderator and 3 AI participants.</p>
+                            </div>
+                        </a>
+
+                        <a href="/pages/interview.html" class="action-tile">
+                            <div class="action-tile-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--success);">🎙️</div>
+                            <div>
+                                <h4 class="action-tile-title">Start AI Interview</h4>
+                                <p class="action-tile-desc">Voice & text mock interviews with adaptive follow-up questions.</p>
+                            </div>
+                        </a>
+
+                        <a href="/pages/resume.html" class="action-tile">
+                            <div class="action-tile-icon" style="background: rgba(245, 158, 11, 0.15); color: var(--warning);">📄</div>
+                            <div>
+                                <h4 class="action-tile-title">Upload Resume</h4>
+                                <p class="action-tile-desc">Extract skills & generate project-targeted interview questions.</p>
+                            </div>
+                        </a>
+
+                        <a href="/pages/companies.html" class="action-tile">
+                            <div class="action-tile-icon" style="background: rgba(168, 85, 247, 0.15); color: #a855f7;">🏢</div>
+                            <div>
+                                <h4 class="action-tile-title">Company Tracks</h4>
+                                <p class="action-tile-desc">Target TCS, Infosys, Amazon, Google, and Deloitte patterns.</p>
+                            </div>
+                        </a>
+
+                        <a href="/pages/simulation.html" class="action-tile" style="border-color: var(--border-accent);">
+                            <div class="action-tile-icon" style="background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #fff;">🚀</div>
+                            <div>
+                                <h4 class="action-tile-title">Full Drive Simulation</h4>
+                                <p class="action-tile-desc">4-Round Recruitment Drive: Aptitude ➔ GD ➔ Tech ➔ HR.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Recommendations & Activity -->
+                <div>
+                    <!-- Streak & Sessions Summary Card -->
+                    <div class="card" style="margin-bottom: 24px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; text-align: center;">
+                            <div style="padding: 12px; background: var(--bg-surface); border-radius: var(--radius-md);">
+                                <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Active Streak</div>
+                                <div id="streak-count" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #f59e0b; margin-top: 4px;">🔥 1 Day</div>
+                            </div>
+                            <div style="padding: 12px; background: var(--bg-surface); border-radius: var(--radius-md);">
+                                <div style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase;">Total Sessions</div>
+                                <div id="total-sessions-count" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #38bdf8; margin-top: 4px;">0</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Personalized Recommendations -->
+                    <div class="recommendation-card">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                            <h3 style="font-size: 1.15rem; color: #ffffff;">Personalized Coaching</h3>
+                            <span>🎯</span>
+                        </div>
+                        <div id="recommendations-container">
+                            <div style="text-align: center; padding: 20px;"><span class="spinner"></span> Analyzing performance history...</div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="card">
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                            <h3 style="font-size: 1.15rem; color: #ffffff;">Recent Activity</h3>
+                            <a href="/pages/progress.html" style="font-size: 0.85rem;">View All</a>
+                        </div>
+                        <div id="recent-activity-list" class="activity-list">
+                            <div style="text-align: center; padding: 20px;"><span class="spinner"></span> Loading activity...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>

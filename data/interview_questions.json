@@ -1,0 +1,208 @@
+{
+  "cloud_engineer": [
+    {
+      "id": "ce-1",
+      "question": "Can you walk me through your experience with cloud platforms, and why you chose Cloud Engineering as your primary career track?",
+      "category": "Cloud Fundamentals",
+      "difficulty": "easy",
+      "expected_topics": ["AWS/Azure/GCP exposure", "Motivation for cloud/DevOps", "Infrastructure as code", "Scalability mindset"]
+    },
+    {
+      "id": "ce-2",
+      "question": "Suppose our web application needs to handle unpredictable viral traffic spikes while minimizing idle costs during the night. How would you architect this on AWS using EC2, Auto Scaling, and Application Load Balancer?",
+      "category": "Compute & Scaling",
+      "difficulty": "medium",
+      "expected_topics": ["Application Load Balancer (ALB)", "Target Groups & Health checks", "Auto Scaling Group (ASG) target tracking policies", "Multi-AZ deployment", "Spot and On-Demand instance mix"]
+    },
+    {
+      "id": "ce-3",
+      "question": "How do you architect a secure VPC from scratch? Detail your subnet design, route tables, and how private instances safely access the internet for OS security updates.",
+      "category": "Networking & Security",
+      "difficulty": "hard",
+      "expected_topics": ["CIDR blocks", "Public vs Private Subnets across 2+ AZs", "Internet Gateway (IGW)", "NAT Gateway placement in public subnet", "Security Groups (stateful) vs Network ACLs (stateless)"]
+    },
+    {
+      "id": "ce-4",
+      "question": "How does AWS IAM enforce the Principle of Least Privilege? What is the difference between an IAM Role and an IAM User, and when would you use an IAM Instance Profile?",
+      "category": "Identity & Access Management",
+      "difficulty": "medium",
+      "expected_topics": ["IAM Policies (Effect, Action, Resource, Conditions)", "IAM Roles with temporary STS credentials", "Avoiding hardcoded secret keys in code or AMI", "Least privilege principle"]
+    },
+    {
+      "id": "ce-5",
+      "question": "Compare Amazon S3 and Amazon EBS. How do you implement automated lifecycle rules on S3 to cost-optimize petabyte-scale data storage?",
+      "category": "Storage",
+      "difficulty": "medium",
+      "expected_topics": ["Object storage vs Block storage", "S3 Standard, Infrequent Access (IA), Glacier, Deep Archive", "S3 Lifecycle policies transitioning objects based on age", "S3 Versioning and MFA Delete"]
+    },
+    {
+      "id": "ce-6",
+      "question": "When would you choose a Serverless architecture using AWS Lambda and API Gateway over containerized microservices running on ECS or EKS?",
+      "category": "Serverless & Containers",
+      "difficulty": "medium",
+      "expected_topics": ["Event-driven architectures vs long-running processes", "Cold start trade-offs", "Operational maintenance overhead", "Pricing model: pay per request vs provisioned cluster costs"]
+    },
+    {
+      "id": "ce-7",
+      "question": "How do Docker and Kubernetes fit into modern cloud deployment? Explain how a Kubernetes Deployment manages rolling updates with zero downtime.",
+      "category": "Container Orchestration",
+      "difficulty": "hard",
+      "expected_topics": ["Docker image immutability", "Kubernetes Pods, ReplicaSets, and Deployments", "RollingUpdate strategy (maxSurge, maxUnavailable)", "Readiness and Liveness probes"]
+    },
+    {
+      "id": "ce-8",
+      "question": "A mission-critical microservice in production is reporting elevated 504 Gateway Timeout errors. How do you systematically use CloudWatch, VPC Flow Logs, and distributed tracing to pinpoint whether the issue is in the load balancer, application pod, or backend database?",
+      "category": "Observability & Troubleshooting",
+      "difficulty": "hard",
+      "expected_topics": ["ALB 504 meaning target timeout", "CloudWatch metrics: target response time, HTTP 5XX counts", "X-Ray traces isolating slow database query", "VPC Flow logs checking network drops", "Application logs in CloudWatch Logs Insights"]
+    }
+  ],
+  "software_developer": [
+    {
+      "id": "sd-1",
+      "question": "Tell me about yourself, your core programming languages, and the most technically challenging software project you have built.",
+      "category": "Background & Projects",
+      "difficulty": "easy",
+      "expected_topics": ["Language fluency (Python, Java, C++, JS/TS)", "Project architecture", "Technical obstacles overcome", "Measurable outcome"]
+    },
+    {
+      "id": "sd-2",
+      "question": "How do you decide between using an Array, a Linked List, and a Hash Map when designing an in-memory data store? What are their time and space complexity trade-offs?",
+      "category": "Data Structures",
+      "difficulty": "medium",
+      "expected_topics": ["Lookup, insertion, and deletion Big-O complexities", "Memory cache locality of contiguous arrays", "Dynamic resizing overhead in dynamic arrays", "Hash collisions and collision resolution"]
+    },
+    {
+      "id": "sd-3",
+      "question": "Explain the Single Responsibility Principle and Dependency Inversion Principle from SOLID. How do they help you write maintainable, testable code?",
+      "category": "Software Architecture & OOP",
+      "difficulty": "medium",
+      "expected_topics": ["One reason to change per class/module", "High-level modules depending on interfaces rather than concrete implementations", "Dependency Injection facilitating mock objects in unit tests", "Decoupling business logic from database/I/O"]
+    },
+    {
+      "id": "sd-4",
+      "question": "How do relational databases maintain data consistency under high concurrent read/write traffic? Explain ACID properties and transaction isolation levels.",
+      "category": "Databases & Concurrency",
+      "difficulty": "hard",
+      "expected_topics": ["Atomicity, Consistency, Isolation, Durability", "Read Uncommitted, Read Committed, Repeatable Read, Serializable", "Dirty reads, non-repeatable reads, and phantom reads", "Optimistic vs Pessimistic locking"]
+    },
+    {
+      "id": "sd-5",
+      "question": "Describe your strategy for writing unit tests and integration tests. What constitutes effective test coverage, and why can 100% line coverage still miss critical bugs?",
+      "category": "Testing & Quality",
+      "difficulty": "medium",
+      "expected_topics": ["Unit testing isolated business logic vs Integration testing service boundaries", "Edge cases, null checks, boundaries", "Line coverage vs branch/path coverage", "Mocking external network/database calls"]
+    },
+    {
+      "id": "sd-6",
+      "question": "You are tasked with designing a RESTful API for a high-volume social media notification feed. How would you design the endpoints, handle pagination, and ensure low latency?",
+      "category": "API Design & Scaling",
+      "difficulty": "hard",
+      "expected_topics": ["Idempotent HTTP methods (GET, POST, PUT, DELETE)", "Cursor-based pagination vs offset pagination for real-time streams", "Caching using Redis", "Asynchronous background processing using message queues"]
+    }
+  ],
+  "managerial": [
+    {
+      "id": "mgr-1",
+      "question": "Tell me about a time you led a team through an ambitious technical project with ambiguous requirements and tight deadlines. How did you organize the roadmap?",
+      "category": "Project Leadership",
+      "difficulty": "medium",
+      "expected_topics": ["Requirement clarification and scoping", "Milestone definition and sprint planning", "Risk management and proactive communication", "Delivery accountability"]
+    },
+    {
+      "id": "mgr-2",
+      "question": "How do you handle a team member who is technically competent but frequently misses deadlines and disrupts team communication?",
+      "category": "People Management",
+      "difficulty": "hard",
+      "expected_topics": ["Private, empathetic fact-finding 1-on-1", "Clear actionable expectations and milestones", "Understanding root cause (personal, technical, burnout)", "Escalation framework only if non-compliance persists"]
+    },
+    {
+      "id": "mgr-3",
+      "question": "Describe a situation where a major client or stakeholder changed product requirements two days before a scheduled release. How did you react and guide your team?",
+      "category": "Stakeholder Management",
+      "difficulty": "hard",
+      "expected_topics": ["Assessing impact and feasibility objectively", "Negotiating phased delivery (launch MVP now, add changes in phase 2)", "Shielding team from panic while maintaining stakeholder trust", "Documenting revised scope"]
+    },
+    {
+      "id": "mgr-4",
+      "question": "How do you balance investing time into refactoring technical debt versus pushing new features requested by product marketing?",
+      "category": "Strategic Trade-offs",
+      "difficulty": "medium",
+      "expected_topics": ["Translating technical debt into business risk (downtime, slow feature velocity, bugs)", "Allocating dedicated bandwidth (e.g. 20% tech debt budget per sprint)", "Prioritizing high-blast-radius tech debt first"]
+    }
+  ],
+  "technical": [
+    {
+      "id": "gen-tech-1",
+      "question": "Could you introduce your technical background, your favorite programming stack, and why you enjoy engineering systems?",
+      "category": "Introduction",
+      "difficulty": "easy",
+      "expected_topics": ["Programming languages", "Core projects", "Problem-solving enthusiasm"]
+    },
+    {
+      "id": "gen-tech-2",
+      "question": "Explain the time and space complexity of QuickSort and MergeSort. In what real-world situations would you choose MergeSort over QuickSort?",
+      "category": "Algorithms",
+      "difficulty": "medium",
+      "expected_topics": ["QuickSort average O(N log N) vs worst-case O(N^2)", "MergeSort guaranteed O(N log N) but requires O(N) auxiliary space", "Stability requirement", "MergeSort for Linked Lists or external sorting of massive disk files"]
+    },
+    {
+      "id": "gen-tech-3",
+      "question": "What is the difference between Clustered and Non-Clustered Indexes in a relational database? How does indexing impact INSERT and UPDATE performance?",
+      "category": "Databases",
+      "difficulty": "medium",
+      "expected_topics": ["Clustered index determines physical table storage order (1 per table)", "Non-clustered index creates separate B+ tree with row pointers", "Accelerates SELECT queries but adds write overhead on INSERT/UPDATE/DELETE"]
+    },
+    {
+      "id": "gen-tech-4",
+      "question": "How does an operating system manage process scheduling and avoid CPU starvation? Explain Round Robin and Multi-Level Feedback Queue scheduling.",
+      "category": "Operating Systems",
+      "difficulty": "hard",
+      "expected_topics": ["Preemptive vs Non-preemptive scheduling", "Time quantum in Round Robin", "MLFQ dynamically adjusting priority based on I/O vs CPU bound behavior", "Aging to prevent starvation"]
+    },
+    {
+      "id": "gen-tech-5",
+      "question": "What are the key trade-offs between Monolithic architecture and Microservices? When should an engineering team NOT transition to microservices?",
+      "category": "System Design",
+      "difficulty": "hard",
+      "expected_topics": ["Monolith: simple deployment, ACID transactions, low network latency", "Microservices: independent deployment, domain boundary scaling, tech stack flexibility", "Microservices complexity: network latency, distributed transactions, observability overhead, operational cost", "Premature microservice decomposition anti-pattern"]
+    }
+  ],
+  "hr": [
+    {
+      "id": "gen-hr-1",
+      "question": "Tell me about yourself, your background, and what inspired you to pursue a career in technology.",
+      "category": "Introduction",
+      "difficulty": "easy",
+      "expected_topics": ["Concise career summary", "Academic achievements", "Passion for learning", "Career trajectory"]
+    },
+    {
+      "id": "gen-hr-2",
+      "question": "Tell me about a time you experienced a significant failure or made a mistake on a project. How did you handle the situation and what did you learn?",
+      "category": "Accountability & Resilience",
+      "difficulty": "medium",
+      "expected_topics": ["Honest acknowledgment of mistake", "Immediate remediation and communication", "Root-cause prevention", "Personal growth"]
+    },
+    {
+      "id": "gen-hr-3",
+      "question": "Why do you want to join our company, and what unique value will you bring to our team from day one?",
+      "category": "Company Culture Fit",
+      "difficulty": "medium",
+      "expected_topics": ["Specific knowledge of company achievements and culture", "Alignment with career goals", "Strong work ethic and collaborative mindset"]
+    },
+    {
+      "id": "gen-hr-4",
+      "question": "Describe a scenario where you had to work with a difficult teammate or conflicting viewpoints. How did you navigate the situation?",
+      "category": "Interpersonal & Teamwork",
+      "difficulty": "medium",
+      "expected_topics": ["Active listening", "Focus on objective project goals", "Constructive compromise", "Maintaining professional rapport"]
+    },
+    {
+      "id": "gen-hr-5",
+      "question": "Where do you envision your professional growth over the next 3 to 5 years?",
+      "category": "Long Term Goals",
+      "difficulty": "easy",
+      "expected_topics": ["Technical excellence in years 1-2", "Module ownership and mentorship in years 3-5", "Continuous learning and business value contribution"]
+    }
+  ]
+}

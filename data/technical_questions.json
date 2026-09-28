@@ -1,0 +1,272 @@
+[
+  {
+    "id": "tech-1",
+    "topic": "Data Structures",
+    "subtopic": "Arrays & Hashing",
+    "difficulty": "medium",
+    "question": "How would you solve the Two Sum problem in O(N) time complexity, and why is a Hash Map optimal here?",
+    "expected_concepts": ["Hash Table lookup in O(1) average time", "Storing complement (target - num) as key and index as value", "Space complexity O(N)", "Handling duplicate values"],
+    "follow_up_hint": "What if the input array is already sorted? Can you do it in O(1) auxiliary space using Two Pointers?"
+  },
+  {
+    "id": "tech-2",
+    "topic": "Data Structures",
+    "subtopic": "Linked Lists",
+    "difficulty": "medium",
+    "question": "Explain Floyd's Cycle-Finding Algorithm (Tortoise and Hare). How does it detect a cycle, and how do you find the exact node where the cycle begins?",
+    "expected_concepts": ["Slow pointer (1 step) and Fast pointer (2 steps)", "Meeting point proof using modular arithmetic", "Resetting slow pointer to head and moving both at 1 step to find entry node", "Time O(N), Space O(1)"],
+    "follow_up_hint": "Can you prove mathematically why the distance from head to loop start equals the distance from meeting point to loop start?"
+  },
+  {
+    "id": "tech-3",
+    "topic": "Data Structures",
+    "subtopic": "Trees",
+    "difficulty": "hard",
+    "question": "What is the difference between a Binary Tree and a Binary Search Tree (BST)? How do you validate if a given binary tree is a valid BST?",
+    "expected_concepts": ["BST property: all left subtree keys < node < all right subtree keys", "In-order traversal yielding strictly increasing sequence", "Recursive range check passing (min_val, max_val)", "Edge cases with duplicate keys or 32-bit integer limits"],
+    "follow_up_hint": "What is the worst-case time complexity of BST operations, and how do self-balancing trees (AVL or Red-Black) resolve it?"
+  },
+  {
+    "id": "tech-4",
+    "topic": "Algorithms",
+    "subtopic": "Dynamic Programming",
+    "difficulty": "hard",
+    "question": "Explain the 0/1 Knapsack problem. What distinguishes Dynamic Programming from a Greedy approach in this problem?",
+    "expected_concepts": ["Optimal substructure and overlapping subproblems", "2D DP table dp[i][w] representing max value with i items and capacity w", "Why Greedy fails when items cannot be fractioned", "Space optimization to 1D array by iterating backwards"],
+    "follow_up_hint": "How does Fractional Knapsack differ, and why does Greedy work there?"
+  },
+  {
+    "id": "tech-5",
+    "topic": "Algorithms",
+    "subtopic": "Graphs",
+    "difficulty": "hard",
+    "question": "How does Dijkstra's Algorithm compute the shortest path in a weighted graph? Why does it fail when negative edge weights are present?",
+    "expected_concepts": ["Greedy choice with Min-Heap / Priority Queue", "Time complexity O((V + E) log V)", "Relaxation of edges", "Failure with negative cycles requiring Bellman-Ford algorithm"],
+    "follow_up_hint": "When would you prefer BFS over Dijkstra's?"
+  },
+  {
+    "id": "tech-6",
+    "topic": "Database Management",
+    "subtopic": "ACID Properties",
+    "difficulty": "medium",
+    "question": "What are ACID properties in relational databases? Explain what happens if the 'I' (Isolation) property is violated.",
+    "expected_concepts": ["Atomicity (All or nothing)", "Consistency (Integrity constraints preserved)", "Isolation (Concurrent transactions don't interfere)", "Durability (Committed data survives crashes)", "Phenomena: Dirty reads, Non-repeatable reads, Phantom reads"],
+    "follow_up_hint": "Can you name the four standard SQL transaction isolation levels?"
+  },
+  {
+    "id": "tech-7",
+    "topic": "Database Management",
+    "subtopic": "Indexing",
+    "difficulty": "medium",
+    "question": "Explain how B-Trees and B+ Trees work in database indexing. Why do relational databases use B+ Trees rather than Binary Search Trees or Hash Tables for disk storage?",
+    "expected_concepts": ["High fanout reducing disk I/O seek operations", "B+ Trees store data only in leaves, internal nodes contain routing keys", "Linked leaf nodes enable efficient sequential range scans", "Why Hash indexes don't support range queries (<, >, BETWEEN)"],
+    "follow_up_hint": "What is the performance trade-off of having too many indexes on a write-heavy table?"
+  },
+  {
+    "id": "tech-8",
+    "topic": "Operating Systems",
+    "subtopic": "Processes & Threads",
+    "difficulty": "medium",
+    "question": "What is the fundamental difference between a Process and a Thread? How do context switching costs compare between them?",
+    "expected_concepts": ["Process has separate address space (text, data, heap, stack)", "Threads within a process share heap, code, and file descriptors but have independent stacks and registers", "Thread context switch avoids flushing TLB (Translation Lookaside Buffer)", "Inter-process communication (IPC) vs shared memory"],
+    "follow_up_hint": "What is a race condition, and how do mutexes or semaphores prevent it?"
+  },
+  {
+    "id": "tech-9",
+    "topic": "Operating Systems",
+    "subtopic": "Deadlocks",
+    "difficulty": "hard",
+    "question": "What are the Coffman conditions required for a Deadlock to occur, and how can an operating system prevent or recover from them?",
+    "expected_concepts": ["Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait", "Breaking circular wait via strict resource ordering", "Banker's Algorithm for deadlock avoidance", "Deadlock detection and process termination"],
+    "follow_up_hint": "What is the difference between Deadlock and Starvation?"
+  },
+  {
+    "id": "tech-10",
+    "topic": "Operating Systems",
+    "subtopic": "Memory Management",
+    "difficulty": "hard",
+    "question": "How does Virtual Memory work? Explain Paging, Page Faults, and Thrashing.",
+    "expected_concepts": ["Mapping virtual address space to physical RAM via Page Tables and MMU", "Page fault triggers OS interrupt to fetch page from swap space on disk", "Thrashing occurs when memory is oversubscribed and system spends all time paging rather than executing", "Page replacement algorithms: LRU, FIFO, Clock"],
+    "follow_up_hint": "What role does the TLB (Translation Lookaside Buffer) play in optimizing virtual memory lookups?"
+  },
+  {
+    "id": "tech-11",
+    "topic": "Computer Networks",
+    "subtopic": "Transport Layer",
+    "difficulty": "medium",
+    "question": "Compare TCP and UDP. Explain the TCP 3-Way Handshake and how TCP achieves reliable, ordered data transmission.",
+    "expected_concepts": ["TCP: Connection-oriented, reliable, ordered, flow control, congestion control", "UDP: Connectionless, lightweight, low-latency, packet delivery not guaranteed", "Three-way handshake: SYN -> SYN-ACK -> ACK", "Sequence numbers, Acknowledgments, Sliding Window, Retransmission timers"],
+    "follow_up_hint": "Why does modern HTTP/3 use QUIC over UDP instead of TCP?"
+  },
+  {
+    "id": "tech-12",
+    "topic": "Computer Networks",
+    "subtopic": "Application Layer",
+    "difficulty": "easy",
+    "question": "What happens under the hood from the moment you type 'https://google.com' in your browser and press Enter until the page renders?",
+    "expected_concepts": ["DNS resolution (browser cache, OS resolver, recursive DNS root/TLD/authoritative)", "TCP 3-way handshake on port 443", "TLS/SSL Handshake (certificate exchange, key agreement, encryption)", "HTTP GET request sent", "Server responds with HTML/CSS/JS", "Browser parses DOM/CSSOM and renders page"],
+    "follow_up_hint": "Where in this flow can caching occur to accelerate repeat visits?"
+  },
+  {
+    "id": "tech-13",
+    "topic": "Object Oriented Programming",
+    "subtopic": "Pillars of OOP",
+    "difficulty": "easy",
+    "question": "Explain the four core principles of OOP—Encapsulation, Abstraction, Inheritance, and Polymorphism—with real-world programming examples.",
+    "expected_concepts": ["Encapsulation: Bundling data and methods, data hiding via access modifiers", "Abstraction: Hiding internal complexity and exposing clean interface", "Inheritance: Code reusability and hierarchical taxonomy", "Polymorphism: Compile-time (overloading) vs Run-time (overriding/virtual methods)"],
+    "follow_up_hint": "Why do modern software architects often recommend 'Composition over Inheritance'?"
+  },
+  {
+    "id": "tech-14",
+    "topic": "Object Oriented Programming",
+    "subtopic": "SOLID Principles",
+    "difficulty": "hard",
+    "question": "What do the letters in SOLID stand for, and why is the Dependency Inversion Principle (DIP) vital for building testable microservices?",
+    "expected_concepts": ["Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion", "High-level modules should not depend on low-level modules; both should depend on abstractions", "Enables Dependency Injection, mocking in unit tests, and swappable database/service adapters"],
+    "follow_up_hint": "Can you give an example of violating the Liskov Substitution Principle?"
+  },
+  {
+    "id": "tech-15",
+    "topic": "System Design",
+    "subtopic": "Scalability & Caching",
+    "difficulty": "hard",
+    "question": "How would you design a distributed caching layer using Redis for a high-traffic e-commerce product catalog? How do you prevent Cache Stampede and Cache Penetration?",
+    "expected_concepts": ["Cache-Aside pattern (Read-through / Write-through)", "TTL (Time-to-Live) and LRU eviction policies", "Cache Stampede mitigation: Mutex locks, probabilistic early expiration (XFetch)", "Cache Penetration mitigation: Bloom Filters or caching null objects with short TTL"],
+    "follow_up_hint": "What happens if the Redis cache instance suddenly restarts? How do you safeguard the primary database?"
+  },
+  {
+    "id": "tech-16",
+    "topic": "System Design",
+    "subtopic": "Load Balancing",
+    "difficulty": "medium",
+    "question": "Explain how Load Balancers distribute web traffic. What is the difference between Layer 4 and Layer 7 load balancing?",
+    "expected_concepts": ["Algorithms: Round Robin, Least Connections, IP Hash, Weighted Round Robin", "Layer 4 (Transport): Routes based on IP and TCP/UDP ports without inspecting packet payload", "Layer 7 (Application): Inspects HTTP headers, cookies, URL paths, and SSL termination", "Health checks preventing traffic to failed instances"],
+    "follow_up_hint": "How do you achieve session persistence (sticky sessions) if a legacy app stores state in server memory?"
+  },
+  {
+    "id": "tech-17",
+    "topic": "Web Technologies",
+    "subtopic": "RESTful APIs",
+    "difficulty": "easy",
+    "question": "What makes an API RESTful? Explain the significance of HTTP methods (GET, POST, PUT, PATCH, DELETE) and status codes (200, 201, 400, 401, 403, 404, 500).",
+    "expected_concepts": ["Stateless client-server architecture", "Idempotency (GET, PUT, DELETE are idempotent; POST is not)", "Difference between PUT (full replacement) and PATCH (partial update)", "Appropriate status codes: 401 Unauthorized (unauthenticated) vs 403 Forbidden (authenticated but no permission)"],
+    "follow_up_hint": "What is the difference between REST and GraphQL?"
+  },
+  {
+    "id": "tech-18",
+    "topic": "Web Technologies",
+    "subtopic": "Security & Authentication",
+    "difficulty": "medium",
+    "question": "How does JSON Web Token (JWT) authentication work? What are its components, and how do you securely handle token revocation/logout?",
+    "expected_concepts": ["Three parts: Header, Payload, Signature separated by dots", "Base64Url encoding (not encryption)", "Stateless verification using secret or public/private RSA key pair", "Revocation strategies: Short-lived access tokens + Refresh token rotation in database, or token blacklists in Redis"],
+    "follow_up_hint": "Why should you never store sensitive passwords or credit card numbers in a JWT payload?"
+  },
+  {
+    "id": "tech-19",
+    "topic": "Cloud Computing",
+    "subtopic": "Core Fundamentals",
+    "difficulty": "easy",
+    "question": "Explain the difference between IaaS, PaaS, and SaaS cloud service models with real-world examples. What does the Shared Responsibility Model mean in AWS?",
+    "expected_concepts": ["IaaS: Infrastructure as a Service (AWS EC2, Google Compute Engine) - user manages OS, runtime, app", "PaaS: Platform as a Service (AWS Elastic Beanstalk, Heroku) - provider manages OS/runtime, user manages app and data", "SaaS: Software as a Service (Google Workspace, Salesforce) - fully managed software", "Shared Responsibility: AWS responsible for security OF the cloud (physical hardware, hypervisor); Customer responsible for security IN the cloud (OS patches, IAM, data encryption)"],
+    "follow_up_hint": "Where does AWS Lambda (Serverless) fit into this spectrum?"
+  },
+  {
+    "id": "tech-20",
+    "topic": "Cloud Computing",
+    "subtopic": "AWS EC2 & Autoscaling",
+    "difficulty": "medium",
+    "question": "How do AWS Auto Scaling Groups (ASG) and Application Load Balancers (ALB) work together to maintain high availability and fault tolerance across multiple Availability Zones?",
+    "expected_concepts": ["Target Groups receiving health checks from ALB", "Auto Scaling policies: Target tracking (e.g. keep CPU at 60%), step scaling, or scheduled", "Multi-AZ deployment ensures surviving datacenter outages", "Launch Templates specifying AMI, instance type, IAM role, security groups"],
+    "follow_up_hint": "What is the difference between horizontal scaling and vertical scaling?"
+  },
+  {
+    "id": "tech-21",
+    "topic": "Cloud Computing",
+    "subtopic": "AWS Storage (S3 & EBS)",
+    "difficulty": "medium",
+    "question": "Compare Amazon S3 (Object Storage) with Amazon EBS (Block Storage). In what scenarios would you choose each, and how do S3 storage tiers optimize costs?",
+    "expected_concepts": ["S3: Object storage accessible via HTTP REST API, unlimited scale, 99.999999999% (11 9s) durability, ideal for media/backups/data lakes", "EBS: Block storage mounted directly to EC2 as a virtual drive for OS filesystems and relational databases", "S3 Storage Tiers: Standard, Infrequent Access (IA), Glacier, Glacier Deep Archive, Intelligent-Tiering"],
+    "follow_up_hint": "What is S3 Cross-Region Replication (CRR) and why is it used for disaster recovery?"
+  },
+  {
+    "id": "tech-22",
+    "topic": "Cloud Computing",
+    "subtopic": "AWS Networking & VPC",
+    "difficulty": "hard",
+    "question": "How do you architect a secure VPC in AWS with Public and Private Subnets? How does an EC2 instance in a private subnet securely download software updates from the internet?",
+    "expected_concepts": ["VPC with CIDR block (e.g. 10.0.0.0/16)", "Public subnet attached to Internet Gateway (IGW)", "Private subnet with no direct route to IGW (houses DB and backend)", "NAT Gateway placed in public subnet routing outbound traffic from private instances to the internet without allowing inbound traffic", "Route tables and Security Groups vs Network ACLs"],
+    "follow_up_hint": "What is the difference between a Security Group (stateful) and a Network ACL (stateless)?"
+  },
+  {
+    "id": "tech-23",
+    "topic": "Cloud Computing",
+    "subtopic": "AWS Serverless & Lambda",
+    "difficulty": "medium",
+    "question": "What is Serverless computing with AWS Lambda? What causes Cold Starts, and how can an engineer minimize cold start latency in production?",
+    "expected_concepts": ["Event-driven execution model where AWS manages provisioning, scaling, and runtime", "Cold start: Delay when Lambda spins up a new microVM execution environment and initializes runtime/dependencies", "Mitigations: Keeping deployment package small, Provisioned Concurrency, choosing lighter runtimes (Python/Go vs Java with heavy frameworks), avoiding heavy DB initialization in handler"],
+    "follow_up_hint": "How do you configure Lambda to access resources inside a private VPC without adding excessive ENI attachment latency?"
+  },
+  {
+    "id": "tech-24",
+    "topic": "DevOps & Containers",
+    "subtopic": "Docker",
+    "difficulty": "medium",
+    "question": "What is the architectural difference between a Docker Container and a Virtual Machine? How do multi-stage Docker builds optimize image size and security?",
+    "expected_concepts": ["VMs run full guest OS with separate kernel via hypervisor (heavy)", "Containers share host OS kernel, utilizing Linux cgroups and namespaces for process isolation (lightweight)", "Multi-stage builds separate build dependencies (compilers, dev packages) from the final lean runtime image", "Smaller images mean faster CI/CD deployment and reduced attack surface"],
+    "follow_up_hint": "Why should you avoid running containers as the 'root' user in production?"
+  },
+  {
+    "id": "tech-25",
+    "topic": "DevOps & Containers",
+    "subtopic": "Kubernetes",
+    "difficulty": "hard",
+    "question": "Explain the core components of Kubernetes architecture: Pods, Deployments, Services, and the Control Plane (API Server, etcd, Scheduler, Controller Manager).",
+    "expected_concepts": ["Pod: Smallest deployable unit containing one or more co-located containers", "Deployment: Manages declarative rollout and self-healing replicas of Pods", "Service: Stable IP and DNS abstraction that routes traffic across dynamic Pods (ClusterIP, NodePort, LoadBalancer)", "Control Plane: kube-apiserver (hub), etcd (distributed key-value state), kube-scheduler (assigns pods to nodes), controller-manager (maintains desired state)"],
+    "follow_up_hint": "How does Kubernetes Ingress differ from a standard NodePort service?"
+  },
+  {
+    "id": "tech-26",
+    "topic": "DevOps & CI/CD",
+    "subtopic": "Continuous Delivery",
+    "difficulty": "medium",
+    "question": "What is the difference between Continuous Integration, Continuous Delivery, and Continuous Deployment? What are the key stages of an automated CI/CD pipeline?",
+    "expected_concepts": ["CI: Frequent code merging with automated linting and unit tests", "Continuous Delivery: Automated build and testing, automatically prepared for release but deployed to production upon manual approval", "Continuous Deployment: Every passing change deployed directly to production without human gatekeeping", "Pipeline stages: Checkout -> Lint/Test -> Build Artifact/Container -> Vulnerability Scan -> Staging Deployment -> Production Rollout"],
+    "follow_up_hint": "What is Blue-Green deployment and how does it achieve zero-downtime releases?"
+  },
+  {
+    "id": "tech-27",
+    "topic": "Cloud Security",
+    "subtopic": "AWS IAM & Principle of Least Privilege",
+    "difficulty": "medium",
+    "question": "How does AWS IAM (Identity and Access Management) enforce the Principle of Least Privilege? Explain the difference between IAM Users, Groups, Roles, and Policies.",
+    "expected_concepts": ["IAM User: Persistent identity for human or legacy app with permanent credentials", "IAM Group: Collection of users sharing permissions", "IAM Role: Temporary identity assumed by trusted entities (EC2 instances, Lambdas, external accounts) using STS tokens", "IAM Policy: JSON document specifying Effect (Allow/Deny), Action, Resource, and Condition", "Explicit Deny always overrides Allow"],
+    "follow_up_hint": "Why should you use IAM Instance Profiles/Roles instead of embedding hardcoded AWS Access Keys inside code on an EC2 instance?"
+  },
+  {
+    "id": "tech-28",
+    "topic": "Software Engineering",
+    "subtopic": "Git & Version Control",
+    "difficulty": "easy",
+    "question": "What is the difference between 'git merge' and 'git rebase'? When should you avoid rebasing on public shared branches?",
+    "expected_concepts": ["Git merge creates a dedicated merge commit preserving complete chronological history of both branches", "Git rebase reapplies commits on top of another base, creating a linear history", "Golden Rule of Rebase: Never rebase a public shared branch because it rewrites commit SHA hashes, creating divergence and chaos for teammates"],
+    "follow_up_hint": "How does 'git cherry-pick' work and when would you use it?"
+  },
+  {
+    "id": "tech-29",
+    "topic": "Operating Systems",
+    "subtopic": "Linux Administration",
+    "difficulty": "medium",
+    "question": "A production server CPU is pegged at 100% and disk space is filling rapidly. What standard Linux command-line tools would you use to diagnose the culprit processes and files?",
+    "expected_concepts": ["top / htop to inspect CPU/memory per process", "ps aux --sort=-%cpu to find top CPU hogs", "df -h to check filesystem disk space usage", "du -sh /* to identify large directories consuming space", "lsof / fuser to check open files, and journalctl / dmesg to inspect system crash logs"],
+    "follow_up_hint": "What does a load average of 4.0 on a 2-core CPU indicate?"
+  },
+  {
+    "id": "tech-30",
+    "topic": "Cloud & Reliability",
+    "subtopic": "Monitoring & Observability",
+    "difficulty": "medium",
+    "question": "What are the Three Pillars of Observability (Metrics, Logs, Traces)? How would you use AWS CloudWatch and AWS X-Ray to troubleshoot high latency in a microservice?",
+    "expected_concepts": ["Metrics: Numeric aggregates over time (CPU, latency percentiles p95/p99, error rates)", "Logs: Structured timestamped records of discreet events", "Traces: End-to-end request flow across distributed microservice boundaries with spans", "CloudWatch Alarms triggering auto-scaling or pager notifications, X-Ray locating the exact database or downstream API causing delay"],
+    "follow_up_hint": "Why are p99 (99th percentile) latency metrics more insightful than average response times?"
+  }
+]

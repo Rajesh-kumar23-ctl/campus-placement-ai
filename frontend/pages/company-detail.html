@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Preparation Track — AI Placement Coach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/companies.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/pages/dashboard.html" class="brand-logo">
+                <div class="brand-icon">🎓</div>
+                <span>AI Placement Coach</span>
+            </a>
+            <div class="nav-actions">
+                <a href="/pages/companies.html" class="btn btn-outline btn-sm">All Companies</a>
+                <a href="/pages/dashboard.html" class="btn btn-secondary btn-sm">Dashboard</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="max-width: 960px; padding: 40px 20px;">
+        <!-- Header Banner -->
+        <div class="card" style="padding: 36px; margin-bottom: 28px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+                <span id="company-detail-tier" class="badge badge-primary">TIER</span>
+                <a href="/pages/companies.html" style="font-size: 0.85rem; color: var(--text-muted);">⬅ Back to directory</a>
+            </div>
+            <h1 id="company-detail-name" style="font-size: 2.2rem; color: #ffffff; margin-bottom: 12px;">Company Name</h1>
+            <p id="company-detail-desc" style="font-size: 1rem; color: var(--text-secondary); line-height: 1.6;"></p>
+        </div>
+
+        <!-- Hiring Pattern & Rounds -->
+        <div class="card" style="padding: 28px; margin-bottom: 28px;">
+            <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 16px;">Hiring Pattern & Rounds</h3>
+            <div style="margin-bottom: 16px;">
+                <strong style="color: var(--text-muted); font-size: 0.85rem; text-transform: uppercase;">Eligibility Criteria:</strong>
+                <p id="pattern-eligibility" style="font-size: 0.95rem; color: var(--text-primary); margin-top: 4px;"></p>
+            </div>
+
+            <div style="margin-bottom: 16px;">
+                <strong style="color: var(--text-muted); font-size: 0.85rem; text-transform: uppercase;">Recruitment Rounds:</strong>
+                <ul id="pattern-rounds-list" style="list-style: none; margin-top: 8px;"></ul>
+            </div>
+
+            <div>
+                <strong style="color: var(--text-muted); font-size: 0.85rem; text-transform: uppercase; display: block; margin-bottom: 6px;">Roles & Compensation Bands:</strong>
+                <div id="pattern-roles-list"></div>
+            </div>
+        </div>
+
+        <!-- Technical & HR Topics Grid -->
+        <div class="auth-grid-2" style="margin-bottom: 28px;">
+            <div class="card" style="padding: 24px;">
+                <h3 style="font-size: 1.15rem; color: var(--info); margin-bottom: 12px;">💻 Key Technical Topics</h3>
+                <ul id="company-tech-topics" style="list-style: disc inside; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;"></ul>
+            </div>
+
+            <div class="card" style="padding: 24px;">
+                <h3 style="font-size: 1.15rem; color: var(--success); margin-bottom: 12px;">🤝 HR & Behavioral Topics</h3>
+                <ul id="company-hr-topics" style="list-style: disc inside; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;"></ul>
+            </div>
+        </div>
+
+        <!-- Sample Questions -->
+        <div style="margin-bottom: 32px;">
+            <h3 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 16px;">Verified Sample Questions</h3>
+            <div id="company-sample-questions"></div>
+        </div>
+
+        <!-- Footer Actions -->
+        <div style="display: flex; justify-content: center; gap: 16px; margin: 40px 0;">
+            <a href="/pages/simulation.html" class="btn btn-primary btn-lg">Launch Full Drive Simulation ➔</a>
+            <a href="/pages/companies.html" class="btn btn-secondary btn-lg">View Other Companies</a>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/companies.js"></script>
+</body>
+</html>

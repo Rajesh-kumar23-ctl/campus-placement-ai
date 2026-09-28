@@ -1,0 +1,446 @@
+[
+  {
+    "id": "tcs",
+    "name": "Tata Consultancy Services (TCS)",
+    "tier": "Service / Enterprise",
+    "description": "One of the world's largest IT services and consulting companies, known for TCS NQT (National Qualifier Test) covering cognitive and technical abilities.",
+    "hiring_pattern": {
+      "rounds": ["TCS NQT (Foundation + Advanced Cognitive & Coding)", "Technical Interview", "Managerial & HR Interview"],
+      "eligibility": "60% or 6.0 CGPA throughout 10th, 12th, and Degree; Max 1 active backlog",
+      "roles": ["Ninja (3.36 - 3.6 LPA)", "Digital (7.0 - 7.5 LPA)", "Prime (9.0 - 11.5 LPA)"]
+    },
+    "preparation_areas": [
+      "Numerical Ability (Statistics, Work & Time, Percentages, P&C)",
+      "Reasoning Ability (Coding-Decoding, Blood Relations, Syllogisms)",
+      "Verbal Ability (Sentence Correction, Para Jumbles, Reading Comprehension)",
+      "Advanced Coding (Arrays, Strings, Recursion, Dynamic Programming)",
+      "Core CS: DBMS (SQL queries, Normalization), OOPs, OS (Deadlocks, Paging)"
+    ],
+    "technical_topics": [
+      "Data Structures: Arrays, Linked Lists, Binary Trees, Stacks/Queues",
+      "Algorithms: Sorting, Binary Search, Two Pointers",
+      "Object Oriented Programming (C++, Java, or Python)",
+      "SQL: Joins, Aggregate Functions, Group By, Subqueries",
+      "Software Development Life Cycle (SDLC) & Agile principles"
+    ],
+    "hr_topics": [
+      "Tell me about yourself and your final year project",
+      "Why TCS over other IT consulting firms?",
+      "Are you willing to relocate and work in rotational shifts?",
+      "How do you handle team conflicts and tight deadlines?",
+      "Where do you see yourself in 3 to 5 years?"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "A sum of money invested at compound interest doubles itself in 5 years. In how many years will it become 8 times of itself?",
+        "options": ["15 years", "20 years", "25 years", "10 years"],
+        "answer": "15 years",
+        "explanation": "If it doubles (2^1) in 5 years, it will become 8 times (2^3) in 5 * 3 = 15 years."
+      },
+      {
+        "type": "technical",
+        "question": "Explain the difference between clustered and non-clustered index in SQL.",
+        "concept": "A clustered index alters the physical order of data in the table, so only one can exist per table. A non-clustered index creates a separate index structure with pointers to the data rows."
+      },
+      {
+        "type": "hr",
+        "question": "Tell me about a time you faced a difficult bug in your college project and how you resolved it.",
+        "concept": "STAR format (Situation, Task, Action, Result) focusing on problem-solving, debugging strategy, and resilience."
+      }
+    ]
+  },
+  {
+    "id": "infosys",
+    "name": "Infosys",
+    "tier": "Service / Global Consulting",
+    "description": "Global leader in next-generation digital services and consulting, hiring via InfyTQ, HackWithInfy, and Campus Recruitment drives.",
+    "hiring_pattern": {
+      "rounds": ["Online Assessment (Reasoning, Mathematical, Verbal, Pseudocode, Puzzle)", "Technical Interview", "HR Interview"],
+      "eligibility": "60% or 6.0+ CGPA in Graduation, 60% in 10th & 12th",
+      "roles": ["Systems Engineer (3.6 LPA)", "Specialist Programmer / SES (6.25 - 9.5 LPA)"]
+    },
+    "preparation_areas": [
+      "Mathematical Critical Thinking and Probability",
+      "Cryptarithmetic and Data Sufficiency",
+      "Pseudocode analysis and Algorithm tracing",
+      "Data Structures and Clean Code execution",
+      "Cloud concepts and modern web architectures"
+    ],
+    "technical_topics": [
+      "Pseudocode debugging (Loop invariants, Recursion trees)",
+      "Arrays, Matrix manipulations, HashMaps, Sliding Window",
+      "Relational Databases and ACID properties",
+      "Web concepts: REST APIs, HTTP methods, Client-Server architecture",
+      "Basic Cloud & DevOps awareness (AWS/Azure basics)"
+    ],
+    "hr_topics": [
+      "Walk me through your resume highlights",
+      "Why Infosys and what do you know about Springboard / Mysore training?",
+      "How do you quickly learn a technology you've never used before?",
+      "Handling unexpected project requirement changes",
+      "Professional ethics and integrity scenarios"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "In a cryptarithmetic problem, if SEND + MORE = MONEY, what digit does 'M' represent?",
+        "options": ["1", "2", "9", "0"],
+        "answer": "1",
+        "explanation": "The sum of two 4-digit numbers cannot exceed 19998, so the carry over M must be 1."
+      },
+      {
+        "type": "technical",
+        "question": "What is the difference between Method Overloading and Method Overriding?",
+        "concept": "Overloading is compile-time polymorphism within the same class (same name, different signature). Overriding is runtime polymorphism in a subclass providing specific implementation of an inherited method."
+      }
+    ]
+  },
+  {
+    "id": "wipro",
+    "name": "Wipro",
+    "tier": "Service / Digital Transformation",
+    "description": "Leading global information technology, consulting and business process services company, hiring through the Elite National Talent Hunt (ENTH) and Turbo/Star tracks.",
+    "hiring_pattern": {
+      "rounds": ["Wipro Elite NLTH (Aptitude, Written Communication Essay, Coding)", "Technical + HR Combined Interview"],
+      "eligibility": "60% or 6.0 CGPA throughout academic records",
+      "roles": ["Project Engineer (3.5 LPA)", "Turbo / Star (5.5 - 6.5 LPA)"]
+    },
+    "preparation_areas": [
+      "Quantitative & Analytical Aptitude",
+      "Written English Essay Writing (grammar, spelling, cohesive argument)",
+      "Coding: Fundamental algorithms (string parsing, number theory)",
+      "Core engineering fundamentals (OS, Networks, Databases)"
+    ],
+    "technical_topics": [
+      "Strings: Anagrams, Palindromes, Substrings, Tokenization",
+      "Operating Systems: Process vs Thread, Scheduling, Memory Management",
+      "Computer Networks: TCP vs UDP, OSI layers, IP addressing, DNS",
+      "Database Management: Keys, Joins, Triggers, Views"
+    ],
+    "hr_topics": [
+      "Brief overview of your personal and academic journey",
+      "Explain your final semester project in non-technical terms",
+      "Wipro's spirit and values: Being passionate about clients' success",
+      "Are you comfortable with bonds and training commitments?"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "If 12 men can complete a work in 14 days, in how many days can 8 men complete the same work?",
+        "options": ["21 days", "24 days", "18 days", "16 days"],
+        "answer": "21 days",
+        "explanation": "M1 * D1 = M2 * D2 => 12 * 14 = 8 * D2 => 168 / 8 = 21 days."
+      },
+      {
+        "type": "technical",
+        "question": "What is the difference between TCP and UDP? Give an example use case for each.",
+        "concept": "TCP is connection-oriented and reliable with error checking (used in HTTP, Web browsing, File transfer). UDP is connectionless and low-latency without delivery guarantee (used in DNS, live video streaming, online gaming)."
+      }
+    ]
+  },
+  {
+    "id": "accenture",
+    "name": "Accenture",
+    "tier": "Global Consulting & Tech",
+    "description": "Global professional services company with leading capabilities in digital, cloud and security, hiring through the Accenture Innovation Challenge and National Campus Assessment.",
+    "hiring_pattern": {
+      "rounds": ["Cognitive & Technical Assessment", "Coding Assessment", "Communication Assessment (automated speech)", "Interview (Tech + HR)"],
+      "eligibility": "65% or 6.5 CGPA in current degree, no active backlogs",
+      "roles": ["Associate Software Engineer - ASE (4.5 LPA)", "Advanced ASE - AASE (6.5 LPA)"]
+    },
+    "preparation_areas": [
+      "Cognitive: Critical Thinking, Abstract Reasoning, English Ability",
+      "Technical: Common Application & MS Office, Pseudocode, Cloud & Network Security",
+      "Automated Speech Assessment: Reading, Repeating, Answering, Story Retelling",
+      "Coding: 2 problems (medium difficulty: arrays, strings, greedy approach)"
+    ],
+    "technical_topics": [
+      "Pseudocode tracing and bitwise operations",
+      "Cloud Architecture fundamentals (IaaS, PaaS, SaaS, Public vs Private)",
+      "Cybersecurity fundamentals: Encryption, Firewalls, Authentication vs Authorization",
+      "Data Structures: Stack, Queue, Array algorithms"
+    ],
+    "hr_topics": [
+      "Tell me about a time you led a team project or handled a difficult member",
+      "How do you stay updated with emerging technologies like Generative AI and Cloud?",
+      "Why Accenture and what do you know about Accenture's core values?",
+      "How do you balance multiple deadlines during exam/project periods?"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "Find the odd one out: 3, 5, 11, 14, 17, 21",
+        "options": ["14", "17", "21", "11"],
+        "answer": "14",
+        "explanation": "14 is the only even number among all odd numbers."
+      },
+      {
+        "type": "technical",
+        "question": "What is the difference between Authentication and Authorization in web security?",
+        "concept": "Authentication verifies identity (Who are you? e.g. login credentials/JWT). Authorization determines access permissions (What are you allowed to do? e.g. admin vs regular user permissions)."
+      }
+    ]
+  },
+  {
+    "id": "cognizant",
+    "name": "Cognizant",
+    "tier": "IT Consulting & Services",
+    "description": "Leading global technology services company recruiting through GenC, GenC Elevate, and GenC Next tracks.",
+    "hiring_pattern": {
+      "rounds": ["Online Assessment (Quantitative, Logical, Verbal, Code Debugging)", "Technical Interview", "HR Interview"],
+      "eligibility": "60% throughout 10th, 12th, and B.E/B.Tech",
+      "roles": ["GenC (4.0 LPA)", "GenC Elevate (4.25 - 5.0 LPA)", "GenC Next (6.75 - 9.0 LPA)"]
+    },
+    "preparation_areas": [
+      "Analytical & Quantitative problem solving",
+      "Automata Fix / Code Debugging (fixing syntax and logical bugs in C/Java/Python)",
+      "Full stack basics (HTML, CSS, JS, REST, SQL)",
+      "Object-Oriented Design and modular coding"
+    ],
+    "technical_topics": [
+      "Code debugging and edge case handling (off-by-one errors, null pointers)",
+      "SQL: DDL, DML, DCL, Joins, Indexing, Transactions",
+      "Core Java / Python / C++ concepts: Polymorphism, Inheritance, Exception handling",
+      "Data Structures: Singly & Doubly Linked Lists, Hash Tables, Trees"
+    ],
+    "hr_topics": [
+      "Walk me through your academic milestones",
+      "Describe a project you built from scratch: architecture and lessons learned",
+      "Willingness to learn new frameworks quickly",
+      "How do you handle constructive criticism from mentors?"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "The average age of 24 students and their teacher is 15 years. If the teacher's age is excluded, the average reduces by 1 year. What is the teacher's age?",
+        "options": ["39 years", "38 years", "40 years", "35 years"],
+        "answer": "39 years",
+        "explanation": "Total age = 25 * 15 = 375. Excluding teacher = 24 * 14 = 336. Teacher's age = 375 - 336 = 39 years."
+      },
+      {
+        "type": "technical",
+        "question": "What is the difference between a Process and a Thread?",
+        "concept": "A process is an executing instance of a program with its own dedicated memory space. A thread is a lightweight execution unit inside a process that shares memory and resources with other threads."
+      }
+    ]
+  },
+  {
+    "id": "deloitte",
+    "name": "Deloitte",
+    "tier": "Big 4 Consulting & Advisory",
+    "description": "Prestigious professional services network hiring for Analyst, Consultant, and Risk Advisory technology roles through Deloitte USI campus drives.",
+    "hiring_pattern": {
+      "rounds": ["Online Assessment (Quantitative, Logical, Verbal, Computer Fundamentals)", "Group Discussion / Jam Session", "Technical & Managerial Interview", "HR Interview"],
+      "eligibility": "60% or 6.5 CGPA or above, strong communication skills",
+      "roles": ["Analyst (USI) (4.5 - 7.6 LPA)", "Associate Analyst (4.0 - 5.5 LPA)"]
+    },
+    "preparation_areas": [
+      "High-speed Quantitative and Logical aptitude",
+      "Business English and reading comprehension",
+      "Group Discussion (Structured communication, collaborative mindset, business topics)",
+      "System design awareness and analytical problem-solving"
+    ],
+    "technical_topics": [
+      "Relational Database Design and normalization up to 3NF",
+      "Data structures: HashMaps, Trees, Graphs, Sorting algorithms",
+      "Cloud computing concepts (AWS/Azure models, scalability, fault tolerance)",
+      "Software testing methodologies: Unit testing, Integration testing, Agile sprints"
+    ],
+    "hr_topics": [
+      "Why Deloitte over pure tech product or pure IT services companies?",
+      "Case scenario: How do you communicate project delays to an international client?",
+      "Leadership experience during college symposiums or internships",
+      "Long term vision and professional ethics"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "A train passes a station platform in 36 seconds and a man standing on the platform in 20 seconds. If the speed of the train is 54 km/hr, what is the length of the platform?",
+        "options": ["240 meters", "200 meters", "300 meters", "180 meters"],
+        "answer": "240 meters",
+        "explanation": "Speed = 54 * (5/18) = 15 m/s. Train length = 15 * 20 = 300 m. In 36s, distance = 15 * 36 = 540 m. Platform length = 540 - 300 = 240 m."
+      },
+      {
+        "type": "technical",
+        "question": "Explain Database Normalization and why 3NF is commonly preferred.",
+        "concept": "Normalization reduces redundancy and dependency. 3NF ensures every non-prime attribute is non-transitively dependent on the candidate key, preventing update and deletion anomalies while maintaining performance."
+      }
+    ]
+  },
+  {
+    "id": "capgemini",
+    "name": "Capgemini",
+    "tier": "Global Tech Consulting",
+    "description": "Global leader in consulting, digital transformation, technology and engineering services, known for its game-based aptitude and pseudo-code evaluations.",
+    "hiring_pattern": {
+      "rounds": ["Technical Assessment (Pseudocode, English Communication, Game-based aptitude)", "Behavioral Competency Profiling", "Technical & HR Interview"],
+      "eligibility": "60% or 6.0 CGPA throughout 10th, 12th, and Graduation",
+      "roles": ["Analyst (4.0 - 4.25 LPA)", "Senior Analyst (5.75 - 7.5 LPA)"]
+    },
+    "preparation_areas": [
+      "Game-based Cognitive games: Motion Challenge, Grid Challenge, Inductive reasoning",
+      "Pseudocode analysis (Recursive calls, Bitwise shifts, String logic)",
+      "English grammar, error spotting, vocabulary",
+      "Core CS fundamentals (OOP, DBMS, OS, Data Structures)"
+    ],
+    "technical_topics": [
+      "Pseudocode tracing and complexity analysis (Big-O)",
+      "OOP: Encapsulation, Abstraction, Inheritance, Polymorphism with code examples",
+      "SQL Joins (Inner, Left, Right, Full Outer) and Grouping queries",
+      "Basics of Web Technologies (APIs, JSON, HTTP Status Codes)"
+    ],
+    "hr_topics": [
+      "Tell me about yourself beyond your resume",
+      "How do you adapt to working in cross-functional distributed teams?",
+      "Give an example of a difficult technical concept you taught to a peer",
+      "Openness to shifts, technologies, and international client delivery"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "What is the output of the pseudocode snippet: Integer a = 5, b = 10; a = a ^ b; b = a ^ b; a = a ^ b; print(a, b)?",
+        "options": ["10 5", "5 10", "15 15", "0 0"],
+        "answer": "10 5",
+        "explanation": "XOR swap exchanges values of a and b without a temporary variable. Hence a=10, b=5."
+      },
+      {
+        "type": "technical",
+        "question": "What is the difference between Abstract Class and Interface?",
+        "concept": "An abstract class can have state (instance variables) and implemented methods as well as abstract methods. An interface specifies a contract (traditionally only abstract methods and static constants, though modern languages support default methods)."
+      }
+    ]
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "tier": "Product / Big Tech (FAANG / MANGA)",
+    "description": "Global tech giant known for high bar software engineering hiring, heavy focus on Data Structures & Algorithms, System Design, and 16 Leadership Principles.",
+    "hiring_pattern": {
+      "rounds": ["Online Assessment (2 DSA Coding problems + Work Simulation + Leadership Survey)", "Technical Round 1 (Data Structures & Coding)", "Technical Round 2 (Algorithms & Problem Solving)", "Bar Raiser Round (Leadership Principles + Tech Deep Dive)"],
+      "eligibility": "No specific percentage cutoff; strong CS fundamentals and coding mastery",
+      "roles": ["SDE-1 (28 - 45 LPA CTC inclusive of base, stocks, bonus)", "Cloud Support Associate (12 - 18 LPA)"]
+    },
+    "preparation_areas": [
+      "Mastery of Data Structures: Trees, Graphs, Heaps, Hash Tables, Tries",
+      "Algorithm Paradigms: Dynamic Programming, BFS/DFS, Greedy, Sliding Window, Monotonic Stack",
+      "Amazon 16 Leadership Principles (Customer Obsession, Ownership, Bias for Action, Dive Deep, Earn Trust, Deliver Results)",
+      "High scalability and clean modular code with rigorous edge case handling",
+      "For Cloud track: AWS deep dive (VPC, IAM, EC2, S3, RDS, CloudWatch, Networking)"
+    ],
+    "technical_topics": [
+      "Binary Search Trees, Lowest Common Ancestor, Tree Traversals",
+      "Graph Algorithms: Dijkstra, Topological Sort, Connected Components, Cycle Detection",
+      "Dynamic Programming: 0/1 Knapsack, Longest Common Subsequence, Word Break",
+      "LRU Cache implementation (HashMap + Doubly Linked List)",
+      "Concurrency, Deadlocks, Mutexes, and Thread Safety"
+    ],
+    "hr_topics": [
+      "Tell me about a time you showed Customer Obsession over short-term gains",
+      "Give an example of when you had to disagree and commit with your team",
+      "Tell me about a time you took a calculated risk and failed. What did you learn?",
+      "Describe a project where you dived deep to find the root cause of an elusive issue"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "In how many ways can 5 Amazon packages be distributed among 3 delivery trucks such that no truck is left empty?",
+        "options": ["150", "120", "90", "180"],
+        "answer": "150",
+        "explanation": "Formula: 3! * S(5,3) where Stirling number of second kind S(5,3) = 25. 6 * 25 = 150."
+      },
+      {
+        "type": "technical",
+        "question": "How would you design and implement an LRU (Least Recently Used) Cache with O(1) get and put operations?",
+        "concept": "Combine a Doubly Linked List (to maintain access order in O(1)) and a Hash Map (mapping key to node pointers for O(1) lookup). When capacity is exceeded, evict the tail node."
+      }
+    ]
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "tier": "Product / Big Tech",
+    "description": "Global software innovator hiring SDEs and Cloud Solution Architects through Microsoft Engage, Code Without Barriers, and Campus drives.",
+    "hiring_pattern": {
+      "rounds": ["Online Coding Assessment (3 questions in 90-120 mins)", "Technical Round 1 (Problem Solving & Coding)", "Technical Round 2 (Data Structures & Systems)", "Technical Round 3 / Hiring Manager (Culture, Architecture & Projects)"],
+      "eligibility": "7.0+ CGPA preferred, strong coding and algorithmic proficiency",
+      "roles": ["Software Engineer (18 - 42 LPA CTC)", "Support Engineer / Cloud Specialist (12 - 16 LPA)"]
+    },
+    "preparation_areas": [
+      "Rigorous Data Structures: Trees, Graphs, Linked Lists, Arrays, Heaps",
+      "Algorithms: Sorting, Searching, Recursion, Memoization, Backtracking",
+      "Object-Oriented Design & SOLID principles",
+      "OS concepts: Paging, Virtual Memory, Inode, IPC, Thread synchronization",
+      "Growth Mindset, diversity, and customer empathy"
+    ],
+    "technical_topics": [
+      "Binary Trees: Serialize & Deserialize, Diameter, Zigzag Traversal",
+      "Linked Lists: Reverse in K-groups, Detect & remove loop, Merge K sorted lists",
+      "Design Patterns: Factory, Singleton, Observer, Strategy",
+      "System Design basics: Caching, Load Balancing, Microservices vs Monolith"
+    ],
+    "hr_topics": [
+      "Why Microsoft and how do our mission and products resonate with your career goals?",
+      "Demonstrate a Growth Mindset: Tell me about something you initially struggled with and mastered",
+      "Tell me about how you handled a disagreement with a project teammate",
+      "How do you ensure accessibility and inclusive design in software you write?"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "A clock shows 3:15. What is the acute angle between the hour hand and the minute hand?",
+        "options": ["7.5 degrees", "0 degrees", "12.5 degrees", "15 degrees"],
+        "answer": "7.5 degrees",
+        "explanation": "At 3:15, minute hand is at 90 deg. Hour hand is at 3 * 30 + 15 * 0.5 = 97.5 deg. Angle = 97.5 - 90 = 7.5 degrees."
+      },
+      {
+        "type": "technical",
+        "question": "How do you detect and remove a cycle in a singly linked list?",
+        "concept": "Use Floyd's Cycle-Finding Algorithm (slow and fast pointers moving at 1x and 2x). If they meet, a cycle exists. To find the loop start, reset slow to head and move both at 1x until they meet. Then break the link."
+      }
+    ]
+  },
+  {
+    "id": "google",
+    "name": "Google",
+    "tier": "Product / Big Tech",
+    "description": "Pioneer of internet search, Android, Cloud, and AI, known for uncompromising algorithmic interviews, clean code standards, and Googleyness.",
+    "hiring_pattern": {
+      "rounds": ["Google Online Challenge / Kickstart / Campus Screening", "Technical Interview 1 (Algorithms & Data Structures)", "Technical Interview 2 (Advanced Problem Solving)", "Technical Interview 3 (Complex Logic & Optimization)", "Googleyness & Leadership Round"],
+      "eligibility": "No formal cutoff; mastery of algorithmic efficiency, proof of correctness, and clean production-ready code",
+      "roles": ["Software Engineer L3 (30 - 55 LPA CTC)", "Customer Engineer / Cloud Tech (18 - 28 LPA)"]
+    },
+    "preparation_areas": [
+      "Advanced Algorithms: Graph Theory, Dynamic Programming, Segment Trees, Topological Sorting",
+      "Time & Space Complexity analysis with exact mathematical rigor",
+      "Writing production-grade, cleanly structured, readable code on Google Docs / whiteboard",
+      "Googleyness: Navigating ambiguity, Intellectual humility, Doing the right thing, Collaborative spirit"
+    ],
+    "technical_topics": [
+      "Graph Traversal (DFS/BFS), Shortest Paths (Dijkstra, A*), Union-Find (Disjoint Set)",
+      "Dynamic Programming on Trees, Bitmask DP, 2D/3D DP",
+      "String Algorithms: Trie, KMP, Rabin-Karp",
+      "Concurrency, Locks, Race Conditions, Memory leaks and profiling"
+    ],
+    "hr_topics": [
+      "What is 'Googleyness' to you, and how have you demonstrated it in team settings?",
+      "Tell me about a time you worked on a project with ambiguous or constantly shifting requirements",
+      "Tell me about a time you admitted you were wrong and changed course based on data",
+      "How do you approach mentoring or helping peers who are struggling?"
+    ],
+    "sample_questions": [
+      {
+        "type": "aptitude",
+        "question": "You have 8 balls of identical look, one is slightly heavier. Using a two-pan balance scale, what is the minimum number of weighings required to identify the heavier ball with certainty?",
+        "options": ["2 weighings", "3 weighings", "4 weighings", "1 weighing"],
+        "answer": "2 weighings",
+        "explanation": "Divide into groups of 3, 3, 2. Weigh 3 vs 3. If equal, weigh remaining 2. If unequal, weigh 1 vs 1 from the heavier group. Exactly 2 weighings suffice."
+      },
+      {
+        "type": "technical",
+        "question": "Given a directed graph, how do you find if it contains a cycle and output a valid topological ordering if none exists?",
+        "concept": "Use Kahn's Algorithm (in-degree array + Queue) or DFS with three color states (Unvisited, Visiting, Visited). If topological sort order size equals number of vertices, no cycle exists; otherwise, a cycle is present."
+      }
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Recruitment Tracks — AI Placement Coach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/companies.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/pages/dashboard.html" class="brand-logo">
+                <div class="brand-icon">🎓</div>
+                <span>AI Placement Coach</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/pages/dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="nav-link">Aptitude</a></li>
+                <li><a href="/pages/gd.html" class="nav-link">GD Simulator</a></li>
+                <li><a href="/pages/interview.html" class="nav-link">AI Interview</a></li>
+                <li><a href="/pages/resume.html" class="nav-link">Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="nav-link active">Companies</a></li>
+                <li><a href="/pages/simulation.html" class="nav-link">Simulation</a></li>
+                <li><a href="/pages/progress.html" class="nav-link">Analytics</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/pages/profile.html" class="user-menu-btn">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name-display">Student</span>
+                </a>
+                <button class="btn btn-outline btn-sm logout-btn">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/pages/dashboard.html" class="sidebar-link"><span>📊</span> Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="sidebar-link"><span>🧮</span> Aptitude Test</a></li>
+                <li><a href="/pages/gd.html" class="sidebar-link"><span>👥</span> Group Discussion</a></li>
+                <li><a href="/pages/interview.html" class="sidebar-link"><span>🎙️</span> AI Mock Interview</a></li>
+                <li><a href="/pages/resume.html" class="sidebar-link"><span>📄</span> Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="sidebar-link active"><span>🏢</span> Company Tracks</a></li>
+                <li><a href="/pages/simulation.html" class="sidebar-link"><span>🚀</span> Placement Drive</a></li>
+                <li><a href="/pages/progress.html" class="sidebar-link"><span>📈</span> Analytics</a></li>
+                <li><a href="/pages/profile.html" class="sidebar-link"><span>⚙️</span> Profile Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <div>
+                    <h1 class="page-title">Company Preparation Tracks</h1>
+                    <p class="page-subtitle">Common preparation areas, verified exam patterns, and sample questions for top recruiters.</p>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="card" style="padding: 18px 24px; margin-bottom: 28px;">
+                <input type="text" id="company-search-input" class="form-control" placeholder="Search company by name (e.g. TCS, Infosys, Amazon, Google, Deloitte)...">
+            </div>
+
+            <!-- Companies Grid -->
+            <div id="companies-grid" class="companies-grid">
+                <!-- Dynamically populated -->
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/companies.js"></script>
+</body>
+</html>

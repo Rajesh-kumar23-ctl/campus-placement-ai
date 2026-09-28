@@ -1,0 +1,83 @@
+/* Responsive Breakpoints & Mobile Optimization */
+
+@media (max-width: 1024px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    .charts-double-grid {
+        grid-template-columns: 1fr;
+    }
+    .interview-room-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .interview-context-sidebar {
+        height: 300px;
+    }
+    .test-layout {
+        grid-template-columns: 1fr;
+    }
+    .palette-card {
+        position: static;
+    }
+    .round-score-cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 72px;
+        left: -280px;
+        bottom: 0;
+        z-index: 99;
+        transition: left var(--transition-normal);
+        box-shadow: var(--shadow-lg);
+    }
+    .sidebar.open {
+        left: 0;
+    }
+    .main-content {
+        padding: 20px 16px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .welcome-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .readiness-hero-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .auth-card {
+        padding: 24px;
+    }
+    .auth-grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .round-score-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .stepper-header::before {
+        display: none;
+    }
+    .stepper-header {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* Touch-friendly adjustments */
+@media (pointer: coarse) {
+    .btn {
+        min-height: 44px;
+    }
+    .option-item {
+        min-height: 52px;
+    }
+}

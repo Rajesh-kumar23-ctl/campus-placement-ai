@@ -1,0 +1,206 @@
+/* AI Mock Interview Room Styles */
+
+.interview-room-grid {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 24px;
+    height: calc(100vh - 120px);
+    max-height: 880px;
+}
+
+.interview-main-stage {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    overflow: hidden;
+}
+
+/* AI Interviewer Persona Header */
+.interviewer-persona {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.ai-avatar-frame {
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.ai-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 4px 16px var(--accent-glow);
+}
+
+.ai-avatar-frame.speaking::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary);
+    animation: ripple 1.4s ease-out infinite;
+}
+
+@keyframes ripple {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.3); opacity: 0; }
+}
+
+.interviewer-info h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.interviewer-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Question Banner */
+.interview-question-box {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.interview-question-text {
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #ffffff;
+    margin-top: 12px;
+}
+
+/* Voice Visualizer */
+.voice-visualizer-container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 20px 0;
+}
+
+.audio-bar {
+    width: 5px;
+    height: 12px;
+    background: var(--primary);
+    border-radius: var(--radius-full);
+    transition: height 0.1s ease;
+}
+
+.voice-visualizer-container.active .audio-bar {
+    animation: soundWave 0.6s ease-in-out infinite alternate;
+}
+
+.audio-bar:nth-child(2) { animation-delay: 0.1s; }
+.audio-bar:nth-child(3) { animation-delay: 0.2s; }
+.audio-bar:nth-child(4) { animation-delay: 0.3s; }
+.audio-bar:nth-child(5) { animation-delay: 0.4s; }
+.audio-bar:nth-child(6) { animation-delay: 0.2s; }
+.audio-bar:nth-child(7) { animation-delay: 0.1s; }
+
+@keyframes soundWave {
+    0% { height: 10px; background: var(--primary); }
+    100% { height: 65px; background: var(--secondary); }
+}
+
+/* User Answer Input Area */
+.answer-input-zone {
+    margin-top: auto;
+}
+
+.answer-textarea {
+    width: 100%;
+    min-height: 130px;
+    padding: 16px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    resize: vertical;
+    margin-bottom: 16px;
+}
+
+.answer-textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.interview-controls-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Right Sidebar: Context & Transcript */
+.interview-context-sidebar {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.context-section {
+    margin-bottom: 24px;
+}
+
+.context-section-title {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+}
+
+.context-history-item {
+    padding: 12px;
+    background: var(--bg-surface);
+    border-radius: var(--radius-md);
+    margin-bottom: 10px;
+    border: 1px solid var(--border-subtle);
+    font-size: 0.85rem;
+}
+
+.context-q {
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.context-score-tag {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--success);
+}

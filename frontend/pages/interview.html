@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mock Interview — AI Placement Coach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/interview.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/pages/dashboard.html" class="brand-logo">
+                <div class="brand-icon">🎓</div>
+                <span>AI Placement Coach</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/pages/dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="nav-link">Aptitude</a></li>
+                <li><a href="/pages/gd.html" class="nav-link">GD Simulator</a></li>
+                <li><a href="/pages/interview.html" class="nav-link active">AI Interview</a></li>
+                <li><a href="/pages/resume.html" class="nav-link">Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="nav-link">Companies</a></li>
+                <li><a href="/pages/simulation.html" class="nav-link">Simulation</a></li>
+                <li><a href="/pages/progress.html" class="nav-link">Analytics</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/pages/profile.html" class="user-menu-btn">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name-display">Student</span>
+                </a>
+                <button class="btn btn-outline btn-sm logout-btn">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="padding: 24px 20px;">
+        <!-- Setup Card (Default View) -->
+        <div id="interview-setup-card" class="card" style="max-width: 620px; margin: 40px auto; padding: 36px;">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <span class="badge badge-success" style="margin-bottom: 8px;">VOICE-ENABLED INTERVIEW ROOM</span>
+                <h1 style="font-size: 1.85rem; color: #ffffff; margin-bottom: 8px;">Launch Mock Interview</h1>
+                <p style="font-size: 0.95rem; color: var(--text-secondary);">Select your target track. The AI asks one question at a time and dynamically adapts to your responses.</p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="interview-type-select">Interview Track</label>
+                <select id="interview-type-select" class="form-control">
+                    <option value="cloud_engineer">Cloud Engineer (AWS, VPC, EC2, S3, Docker, K8s)</option>
+                    <option value="software_developer" selected>Software Developer (OOP, DSA, System Design, APIs)</option>
+                    <option value="technical">Technical Fundamentals (DBMS, OS, Networks, Algorithms)</option>
+                    <option value="hr">HR & Behavioral (STAR narratives, culture fit)</option>
+                    <option value="managerial">Managerial & Leadership (Trade-offs, project delivery)</option>
+                    <option value="mock_interview">Full Mock Interview (Comprehensive 360° blend)</option>
+                </select>
+            </div>
+
+            <div class="auth-grid-2">
+                <div class="form-group">
+                    <label class="form-label" for="target-role-input">Target Role Title</label>
+                    <input type="text" id="target-role-input" class="form-control" value="Software Developer">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="interview-diff-select">Difficulty</label>
+                    <select id="interview-diff-select" class="form-control">
+                        <option value="easy">Entry / Foundation</option>
+                        <option value="medium" selected>Standard Campus Level</option>
+                        <option value="hard">Advanced / Top Product Tier</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 6px;">
+                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; color: var(--text-primary); font-size: 0.95rem;">
+                    <input type="checkbox" id="use-resume-checkbox" style="width: 18px; height: 18px; accent-color: var(--primary);">
+                    <span>Personalize questions using my latest uploaded resume</span>
+                </label>
+            </div>
+
+            <button id="btn-start-interview-session" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 14px;">
+                Enter AI Interview Room ➔
+            </button>
+        </div>
+
+        <!-- Active Interview Room Stage (Shown during session) -->
+        <div id="interview-room-stage" class="interview-room-grid" style="display: none;">
+            <!-- Main Stage -->
+            <div class="interview-main-stage">
+                <div>
+                    <!-- Persona Header -->
+                    <div class="interviewer-persona">
+                        <div class="ai-avatar-frame">
+                            <div class="ai-avatar">AI</div>
+                        </div>
+                        <div class="interviewer-info">
+                            <h3 id="interviewer-title">Lead Placement Evaluator</h3>
+                            <p id="stage-role-text">Software Developer • TECHNICAL</p>
+                        </div>
+                    </div>
+
+                    <!-- Question Box -->
+                    <div class="interview-question-box">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span id="question-counter-badge" class="badge badge-primary">Question 1 / 5</span>
+                            <span id="question-category-tag" class="badge badge-secondary">Core Concepts</span>
+                        </div>
+                        <div id="active-question-text" class="interview-question-text">
+                            Question loading...
+                        </div>
+                    </div>
+
+                    <!-- Audio Visualizer Wave -->
+                    <div id="voice-visualizer" class="voice-visualizer-container">
+                        <div class="audio-bar"></div>
+                        <div class="audio-bar"></div>
+                        <div class="audio-bar"></div>
+                        <div class="audio-bar"></div>
+                        <div class="audio-bar"></div>
+                        <div class="audio-bar"></div>
+                        <div class="audio-bar"></div>
+                    </div>
+                </div>
+
+                <!-- Answer Input Area -->
+                <div class="answer-input-zone">
+                    <textarea id="interview-answer-text" class="answer-textarea" placeholder="Speak your answer with the microphone or type directly here..."></textarea>
+
+                    <div class="interview-controls-bar">
+                        <div style="display: flex; gap: 12px;">
+                            <button id="btn-voice-record" class="btn btn-outline">
+                                🎙️ Start Answer
+                            </button>
+                            <button id="btn-force-end" class="btn btn-secondary btn-sm">
+                                End Session
+                            </button>
+                        </div>
+
+                        <button id="btn-submit-answer" class="btn btn-primary">
+                            Submit Answer ➔
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Sidebar: Context & Transcript -->
+            <div class="interview-context-sidebar">
+                <div class="context-section">
+                    <div class="context-section-title">Session Context</div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 12px;">
+                        The AI interviewer evaluates Technical Accuracy (30%), Content (20%), Relevance (20%), Clarity (15%), and Communication (15%).
+                    </div>
+                </div>
+
+                <div class="context-section" style="flex: 1;">
+                    <div class="context-section-title">Answer History</div>
+                    <div id="context-history-list">
+                        <!-- Populated dynamically as candidate answers -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/interview.js"></script>
+</body>
+</html>

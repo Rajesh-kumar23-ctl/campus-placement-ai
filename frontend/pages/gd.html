@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Discussion Preparation — AI Placement Coach</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/gd.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <div class="ambient-glow"></div>
+
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/pages/dashboard.html" class="brand-logo">
+                <div class="brand-icon">🎓</div>
+                <span>AI Placement Coach</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/pages/dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="nav-link">Aptitude</a></li>
+                <li><a href="/pages/gd.html" class="nav-link active">GD Simulator</a></li>
+                <li><a href="/pages/interview.html" class="nav-link">AI Interview</a></li>
+                <li><a href="/pages/resume.html" class="nav-link">Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="nav-link">Companies</a></li>
+                <li><a href="/pages/simulation.html" class="nav-link">Simulation</a></li>
+                <li><a href="/pages/progress.html" class="nav-link">Analytics</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="/pages/profile.html" class="user-menu-btn">
+                    <div class="user-avatar">👤</div>
+                    <span class="user-name-display">Student</span>
+                </a>
+                <button class="btn btn-outline btn-sm logout-btn">Log Out</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li><a href="/pages/dashboard.html" class="sidebar-link"><span>📊</span> Dashboard</a></li>
+                <li><a href="/pages/aptitude.html" class="sidebar-link"><span>🧮</span> Aptitude Test</a></li>
+                <li><a href="/pages/gd.html" class="sidebar-link active"><span>👥</span> Group Discussion</a></li>
+                <li><a href="/pages/interview.html" class="sidebar-link"><span>🎙️</span> AI Mock Interview</a></li>
+                <li><a href="/pages/resume.html" class="sidebar-link"><span>📄</span> Resume AI</a></li>
+                <li><a href="/pages/companies.html" class="sidebar-link"><span>🏢</span> Company Tracks</a></li>
+                <li><a href="/pages/simulation.html" class="sidebar-link"><span>🚀</span> Placement Drive</a></li>
+                <li><a href="/pages/progress.html" class="sidebar-link"><span>📈</span> Analytics</a></li>
+                <li><a href="/pages/profile.html" class="sidebar-link"><span>⚙️</span> Profile Settings</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <div>
+                    <h1 class="page-title">Group Discussion Preparation</h1>
+                    <p class="page-subtitle">Master opening hooks, structured arguments, and live simulated multi-participant GD rounds.</p>
+                </div>
+                <div style="display: flex; gap: 12px;">
+                    <button id="btn-custom-topic" class="btn btn-secondary">✨ Generate Custom Topic</button>
+                    <a href="/pages/gd-simulator.html" class="btn btn-primary">🎙️ Live GD Simulator</a>
+                </div>
+            </div>
+
+            <!-- Filters Bar -->
+            <div class="card" style="padding: 18px 24px; margin-bottom: 28px;">
+                <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px;">
+                    <div>
+                        <input type="text" id="gd-search-input" class="form-control" placeholder="Search topics (e.g. AI, Remote Work, Moonlighting, EV, Cashless)...">
+                    </div>
+                    <div>
+                        <select id="gd-category-filter" class="form-control">
+                            <option value="all">All Categories</option>
+                            <option value="Technology & Future of Work">Technology & Future of Work</option>
+                            <option value="Ethics & Professionalism">Ethics & Professionalism</option>
+                            <option value="Environment & Sustainability">Environment & Sustainability</option>
+                            <option value="Economy & Governance">Economy & Governance</option>
+                            <option value="Education & Careers">Education & Careers</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topics Grid -->
+            <div id="gd-topics-grid" class="topics-grid">
+                <!-- Dynamically populated -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Custom Topic Modal -->
+    <div id="custom-topic-modal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 style="font-size: 1.2rem; color: #ffffff;">Generate Custom GD Preparation</h3>
+                <button class="btn btn-outline btn-sm" onclick="document.getElementById('custom-topic-modal').classList.remove('active')">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label class="form-label" for="custom-topic-input">Enter Group Discussion Topic</label>
+                    <input type="text" id="custom-topic-input" class="form-control" placeholder="e.g. Is Quantum Computing ready for commercial use?">
+                </div>
+                <div class="auth-grid-2">
+                    <div class="form-group">
+                        <label class="form-label" for="custom-category-input">Category</label>
+                        <select id="custom-category-input" class="form-control">
+                            <option value="Technology">Technology</option>
+                            <option value="Economy">Economy</option>
+                            <option value="Corporate Ethics">Corporate Ethics</option>
+                            <option value="Education">Education</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="custom-difficulty-input">Difficulty</label>
+                        <select id="custom-difficulty-input" class="form-control">
+                            <option value="Easy">Easy</option>
+                            <option value="Medium" selected>Medium</option>
+                            <option value="Hard">Hard</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-cancel-custom" class="btn btn-secondary">Cancel</button>
+                <button id="btn-generate-prep" class="btn btn-primary">Generate Prep Material ➔</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Topic Prep Modal -->
+    <div id="gd-prep-modal" class="modal-overlay">
+        <div class="modal" style="max-width: 780px;">
+            <div class="modal-header">
+                <div>
+                    <div style="display: flex; gap: 8px; margin-bottom: 6px;">
+                        <span id="modal-topic-category" class="badge badge-secondary">Category</span>
+                        <span id="modal-topic-difficulty" class="badge badge-warning">Medium</span>
+                    </div>
+                    <h3 id="modal-topic-title" style="font-size: 1.3rem; color: #ffffff;">Topic Title</h3>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="closePrepModal()">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="prep-section">
+                    <div class="prep-section-title">📌 Topic Overview</div>
+                    <p id="modal-topic-overview" style="font-size: 0.95rem; line-height: 1.6; color: var(--text-primary);"></p>
+                </div>
+
+                <div class="prep-section">
+                    <div class="prep-section-title">🎤 Opening Hook Statement</div>
+                    <div id="modal-topic-opening" class="speech-box"></div>
+                </div>
+
+                <div class="auth-grid-2" style="margin-bottom: 24px;">
+                    <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: var(--radius-md); padding: 16px;">
+                        <div style="font-weight: 700; color: var(--success); margin-bottom: 8px;">✓ Key Arguments For:</div>
+                        <ul id="modal-args-for" style="list-style: disc inside; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;"></ul>
+                    </div>
+                    <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.25); border-radius: var(--radius-md); padding: 16px;">
+                        <div style="font-weight: 700; color: var(--danger); margin-bottom: 8px;">✕ Counterarguments:</div>
+                        <ul id="modal-args-against" style="list-style: disc inside; font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;"></ul>
+                    </div>
+                </div>
+
+                <div class="prep-section">
+                    <div class="prep-section-title">🌍 Real-World Examples & Case Studies</div>
+                    <ul id="modal-examples" style="list-style: disc inside; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6;"></ul>
+                </div>
+
+                <div class="prep-section">
+                    <div class="prep-section-title">⚡ 30-Second Elevator Pitch</div>
+                    <div id="modal-30s-speech" class="speech-box speech-box-gold"></div>
+                </div>
+
+                <div class="prep-section">
+                    <div class="prep-section-title">🗣️ Structured 1-Minute Speech</div>
+                    <div id="modal-1m-speech" class="speech-box"></div>
+                </div>
+
+                <div class="prep-section">
+                    <div class="prep-section-title">🎯 Balanced Conclusion</div>
+                    <p id="modal-conclusion" style="font-size: 0.9rem; color: var(--text-primary);"></p>
+                </div>
+
+                <div class="prep-section">
+                    <div class="prep-section-title" style="color: var(--danger);">⚠️ Things to Avoid</div>
+                    <ul id="modal-avoid" style="list-style: disc inside; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;"></ul>
+                </div>
+
+                <div class="prep-section">
+                    <div class="prep-section-title">❓ Potential Follow-Up Questions</div>
+                    <ul id="modal-followups" style="list-style: disc inside; font-size: 0.85rem; color: var(--info); line-height: 1.6;"></ul>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closePrepModal()">Close</button>
+                <a id="modal-practice-link" href="#" class="btn btn-primary">Practice in GD Simulator ➔</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/gd.js"></script>
+</body>
+</html>

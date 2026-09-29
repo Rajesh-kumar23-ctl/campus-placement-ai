@@ -59,21 +59,89 @@
         <main class="main-content">
             <div class="page-header">
                 <div>
-                    <h1 class="page-title">Company Preparation Tracks</h1>
-                    <p class="page-subtitle">Common preparation areas, verified exam patterns, and sample questions for top recruiters.</p>
+                    <h1 class="page-title">Company Tracks &amp; Live Job Hunts</h1>
+                    <p class="page-subtitle">Preparation roadmaps, verified exam patterns, and real-time vacancies powered by Google Jobs engine.</p>
                 </div>
             </div>
 
-            <!-- Search Bar -->
-            <div class="card" style="padding: 18px 24px; margin-bottom: 28px;">
-                <input type="text" id="company-search-input" class="form-control" placeholder="Search company by name (e.g. TCS, Infosys, Amazon, Google, Deloitte)...">
+            <!-- Tab Switcher -->
+            <div class="track-tabs-container">
+                <button type="button" id="tab-company-tracks" class="track-tab-btn active">
+                    <span>🏢</span> Company Preparation Tracks
+                </button>
+                <button type="button" id="tab-live-jobs" class="track-tab-btn">
+                    <span class="pulse-dot"></span> Live Job Hunts &amp; Drives
+                </button>
             </div>
 
-            <!-- Companies Grid -->
-            <div id="companies-grid" class="companies-grid">
-                <!-- Dynamically populated -->
+            <!-- VIEW 1: Company Tracks -->
+            <div id="company-tracks-view">
+                <!-- Search Bar -->
+                <div class="card" style="padding: 18px 24px; margin-bottom: 28px;">
+                    <input type="text" id="company-search-input" class="form-control" placeholder="Search company by name (e.g. TCS, Infosys, Amazon, Google, Deloitte)...">
+                </div>
+
+                <!-- Companies Grid -->
+                <div id="companies-grid" class="companies-grid">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+
+            <!-- VIEW 2: Real-Time Live Job Hunts (Google Jobs Integrated) -->
+            <div id="live-jobs-view" style="display: none;">
+                <!-- Filter Bar -->
+                <div class="card" style="padding: 24px; margin-bottom: 28px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+                        <div>
+                            <h3 style="font-size: 1.15rem; color: #ffffff; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
+                                <span class="live-pulse-badge"><span class="pulse-dot"></span> Live Hiring Engine</span>
+                                Active Campus &amp; Off-Campus Openings
+                            </h3>
+                            <p style="color: var(--text-muted); font-size: 0.88rem; margin: 0;">Verified job listings directly from corporate career boards and Google Jobs.</p>
+                        </div>
+                        <a id="btn-master-google-jobs" href="https://www.google.com/search?q=fresher+software+engineer+jobs+india&ibp=htl;jobs" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="display: flex; align-items: center; gap: 6px;">
+                            <span>🔍</span> Explore on Google Jobs
+                        </a>
+                    </div>
+
+                    <div class="jobs-filter-grid" style="display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: 12px; align-items: center;">
+                        <input type="text" id="jobs-search-role" class="form-control" placeholder="Search role, skills, keywords (e.g., Software Engineer, Trainee)...">
+                        <select id="jobs-filter-company" class="form-control">
+                            <option value="all">All Companies</option>
+                            <option value="tcs">TCS</option>
+                            <option value="infosys">Infosys</option>
+                            <option value="accenture">Accenture</option>
+                            <option value="capgemini">Capgemini</option>
+                            <option value="cognizant">Cognizant</option>
+                            <option value="wipro">Wipro</option>
+                            <option value="deloitte">Deloitte</option>
+                            <option value="amazon">Amazon</option>
+                            <option value="microsoft">Microsoft</option>
+                            <option value="google">Google</option>
+                        </select>
+                        <select id="jobs-filter-location" class="form-control">
+                            <option value="all">All Locations</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Delhi-NCR">Delhi-NCR</option>
+                            <option value="Remote">Remote</option>
+                        </select>
+                        <button type="button" id="btn-search-jobs" class="btn btn-primary" style="white-space: nowrap; height: 100%;">
+                            <span>⚡</span> Find Jobs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Live Job Cards Grid -->
+                <div id="live-jobs-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 20px;">
+                    <!-- Dynamically populated -->
+                </div>
             </div>
         </main>
+
     </div>
 
     <script src="/js/api.js"></script>

@@ -476,3 +476,49 @@ class TestMaterials:
         assert single_res.json()["id"] == item_id
 
 
+class TestLiveJobs:
+    def test_get_live_jobs_default(self):
+        response = client.get("/api/jobs/live")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["total"] >= 10
+        assert len(data["jobs"]) >= 10
+        assert "ibp=htl;jobs" in data["google_jobs_search_url"]
+        job = data["jobs"][0]
+        assert "title" in job
+        assert "company_name" in job
+        assert "apply_url" in job
+        assert job["apply_url"].startswith("http")
+        assert "google_jobs_url" in job
+        assert "batch_eligibility" in job
+        assert job["is_live"] is True
+
+    def test_get_live_jobs_by_company(self):
+        response = client.get("/api/jobs/live?company=infosys")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["total"] >= 2
+        for job in data["jobs"]:
+            assert "infosys" in job["company_name"].lower() or "infosys" in job["company_id"].lower()
+            assert "career" in job["apply_url"].lower() or "infy" in job["apply_url"].lower()
+
+    def test_company_jobs_endpoint(self):
+        response = client.get("/api/companies/tcs/jobs")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["total"] >= 2
+        first_job = data["jobs"][0]
+        assert "tcs" in first_job["company_id"].lower()
+        assert "nextstep" in first_job["apply_url"].lower() or "tcs.com" in first_job["apply_url"].lower()
+        assert "google_jobs_url" in first_job
+
+    def test_jobs_filter_location_and_role(self):
+        response = client.get("/api/jobs/live?location=Bengaluru&role=Software")
+        assert response.status_code == 200
+        data = response.json()
+        assert data["total"] > 0
+        for job in data["jobs"]:
+            assert "software" in job["title"].lower() or "software" in job["description_snippet"].lower()
+
+
+

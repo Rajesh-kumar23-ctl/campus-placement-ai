@@ -54,8 +54,35 @@
             </div>
         </div>
 
+        <!-- Real-Time Vacancies & Direct Apply Links (Powered by Google Jobs) -->
+        <div class="card" style="padding: 28px; margin-bottom: 28px; border: 1px solid rgba(16, 185, 129, 0.3); background: rgba(15, 23, 42, 0.85);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+                <div>
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                        <span class="live-pulse-badge"><span class="pulse-dot"></span> Live Vacancy Tracker</span>
+                        <span style="font-size: 0.75rem; color: #94a3b8;">Google Jobs Engine &amp; Official ATS</span>
+                    </div>
+                    <h3 style="font-size: 1.3rem; color: #ffffff; margin-bottom: 4px;">Active Recruitment Drives &amp; Open Positions</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Real-time campus, off-campus, and fresher vacancies with verified direct application links.</p>
+                </div>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <a id="company-google-jobs-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="display: flex; align-items: center; gap: 6px;">
+                        <span>🔍</span> Search All on Google Jobs
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dynamic Live Job Cards Container -->
+            <div id="company-live-jobs-list" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px;">
+                <div style="grid-column: 1/-1; text-align: center; padding: 24px;">
+                    <span class="spinner"></span> Checking live vacancies with Google Jobs...
+                </div>
+            </div>
+        </div>
+
         <!-- Technical & HR Topics Grid -->
         <div class="auth-grid-2" style="margin-bottom: 28px;">
+
             <div class="card" style="padding: 24px;">
                 <h3 style="font-size: 1.15rem; color: var(--info); margin-bottom: 12px;">💻 Key Technical Topics</h3>
                 <ul id="company-tech-topics" style="list-style: disc inside; font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7;"></ul>

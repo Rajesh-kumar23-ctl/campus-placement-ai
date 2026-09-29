@@ -29,6 +29,9 @@ class Settings(BaseSettings):
     AI_API_KEY: str = os.getenv("AI_API_KEY", "")
     AI_MODEL: str = os.getenv("AI_MODEL", "")
 
+    # Google Jobs / SerpApi Configuration
+    SERPAPI_API_KEY: str = os.getenv("SERPAPI_API_KEY", os.getenv("GOOGLE_JOBS_API_KEY", ""))
+
     # Directories
     BASE_DIR: Path = BASE_DIR
     DATA_DIR: Path = BASE_DIR / "data"

@@ -3,6 +3,8 @@ from fastapi import APIRouter, HTTPException, Query, status
 from typing import List, Optional
 from backend.config import settings
 from backend.schemas.company import CompanyResponse
+from backend.schemas.job import LiveJobsResponse
+from backend.services.job_service import get_live_jobs
 
 router = APIRouter(prefix="/api/companies", tags=["Companies"])
 
@@ -30,3 +32,9 @@ def get_company(company_id: str):
         if c["id"].lower() == company_id.lower():
             return c
     raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Company profile not found.")
+
+@router.get("/{company_id}/jobs", response_model=LiveJobsResponse)
+def get_company_live_jobs(company_id: str, limit: int = Query(10, ge=1, le=30)):
+    """Retrieve real-time company vacancies and direct application links powered by Google Jobs."""
+    return get_live_jobs(company=company_id, limit=limit)
+

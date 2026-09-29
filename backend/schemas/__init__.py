@@ -7,6 +7,8 @@ from backend.schemas.company import CompanyResponse
 from backend.schemas.progress import DashboardResponse, ProgressAnalyticsResponse
 from backend.schemas.simulation import SimulationStartRequest, SimulationRoundCompleteRequest, SimulationReportResponse
 
+from backend.schemas.job import JobListing, LiveJobsResponse
+
 __all__ = [
     "UserRegister", "UserLogin", "UserResponse", "Token", "UserUpdate",
     "AptitudeStartRequest", "AptitudeSubmitRequest", "AptitudeAttemptResponse", "AptitudeQuestionItem",
@@ -15,5 +17,7 @@ __all__ = [
     "ResumeResponse", "ResumeQuestionGenerateRequest",
     "CompanyResponse",
     "DashboardResponse", "ProgressAnalyticsResponse",
-    "SimulationStartRequest", "SimulationRoundCompleteRequest", "SimulationReportResponse"
+    "SimulationStartRequest", "SimulationRoundCompleteRequest", "SimulationReportResponse",
+    "JobListing", "LiveJobsResponse"
 ]
+

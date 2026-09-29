@@ -299,7 +299,24 @@ class APIClient {
     async getDriveInfo() {
         return this._request("/api/materials/drive-info", { method: "GET" });
     }
+
+    // --- Real-Time Jobs & Vacancies (Google Jobs Engine) ---
+    async getLiveJobs(params = {}) {
+        const queryParts = [];
+        if (params.company && params.company !== "all") queryParts.push(`company=${encodeURIComponent(params.company)}`);
+        if (params.role) queryParts.push(`role=${encodeURIComponent(params.role)}`);
+        if (params.location && params.location !== "all") queryParts.push(`location=${encodeURIComponent(params.location)}`);
+        if (params.limit) queryParts.push(`limit=${params.limit}`);
+
+        const queryString = queryParts.length ? `?${queryParts.join("&")}` : "";
+        return this._request(`/api/jobs/live${queryString}`, { method: "GET" });
+    }
+
+    async getCompanyJobs(companyId, limit = 10) {
+        return this._request(`/api/companies/${encodeURIComponent(companyId)}/jobs?limit=${limit}`, { method: "GET" });
+    }
 }
+
 
 // Export single shared instance globally
 window.api = new APIClient();

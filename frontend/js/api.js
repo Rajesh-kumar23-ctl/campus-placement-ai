@@ -5,12 +5,21 @@
 
 // Dynamically determine backend API base URL
 const API_BASE_URL = (() => {
-    // If running on port 8000 (FastAPI static mount), use relative path
+    // If running through FastAPI itself
     if (window.location.port === "8000") {
         return "";
     }
-    // Otherwise fallback to localhost:8000 default
-    return "http://localhost:8000";
+
+    // Local frontend development
+    if (
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1"
+    ) {
+        return "http://localhost:8000";
+    }
+
+    // Production frontend on Vercel
+    return "https://campus-placement-ai-backend-kappa.vercel.app";
 })();
 
 class APIClient {
